@@ -1,0 +1,1489 @@
+
+	    <html>
+	      <head>
+				  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	        <title>README</title>
+					
+					<link href="toc/style/github-bf51422f4bb36427d391e4b75a1daa083c2d840e.css" tppabs="http://i5ting.github.io/vsc/toc/style/github-bf51422f4bb36427d391e4b75a1daa083c2d840e.css" media="all" rel="stylesheet" type="text/css"/>
+					<link href="toc/style/github2-d731afd4f624c99a4b19ad69f3083cd6d02b81d5.css" tppabs="http://i5ting.github.io/vsc/toc/style/github2-d731afd4f624c99a4b19ad69f3083cd6d02b81d5.css" media="all" rel="stylesheet" type="text/css"/>
+					<link href="toc/css/zTreeStyle/zTreeStyle.css" tppabs="http://i5ting.github.io/vsc/toc/css/zTreeStyle/zTreeStyle.css" media="all" rel="stylesheet" type="text/css"/>
+			
+				  <style>
+					pre {
+					    counter-reset: line-numbering;
+					    border: solid 1px #d9d9d9;
+					    border-radius: 0;
+					    background: #fff;
+					    padding: 0;
+					    line-height: 23px;
+					    margin-bottom: 30px;
+					    white-space: pre;
+					    overflow-x: auto;
+					    word-break: inherit;
+					    word-wrap: inherit;
+					}
+
+					pre a::before {
+					  content: counter(line-numbering);
+					  counter-increment: line-numbering;
+					  padding-right: 1em; /* space after numbers */
+					  width: 25px;
+					  text-align: right;
+					  opacity: 0.7;
+					  display: inline-block;
+					  color: #aaa;
+					  background: #eee;
+					  margin-right: 16px;
+					  padding: 2px 10px;
+					  font-size: 13px;
+					  -webkit-touch-callout: none;
+					  -webkit-user-select: none;
+					  -khtml-user-select: none;
+					  -moz-user-select: none;
+					  -ms-user-select: none;
+					  user-select: none;
+					}
+
+					pre a:first-of-type::before {
+					  padding-top: 10px;
+					}
+
+					pre a:last-of-type::before {
+					  padding-bottom: 10px;
+					}
+
+					pre a:only-of-type::before {
+					  padding: 10px;
+					}
+			
+					.highlight { background-color: #ffffcc } /* RIGHT */
+					</style>
+	      </head>
+	      <body>
+				  <div>
+							<div style='width:25%;'>
+									<ul id="tree" class="ztree" style='width:100%'>
+		
+									</ul>
+							</div>
+			        <div id='readme' style='width:70%;margin-left:20%;'>
+			          	<article class='markdown-body'>
+			            	<style>.highlight .hll { background-color: #ffffcc }
+.highlight  { background: #f0f0f0; }
+.highlight .c { color: #60a0b0; font-style: italic } /* Comment */
+.highlight .err { border: 1px solid #FF0000 } /* Error */
+.highlight .k { color: #007020; font-weight: bold } /* Keyword */
+.highlight .o { color: #666666 } /* Operator */
+.highlight .cm { color: #60a0b0; font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: #007020 } /* Comment.Preproc */
+.highlight .c1 { color: #60a0b0; font-style: italic } /* Comment.Single */
+.highlight .cs { color: #60a0b0; background-color: #fff0f0 } /* Comment.Special */
+.highlight .gd { color: #A00000 } /* Generic.Deleted */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gr { color: #FF0000 } /* Generic.Error */
+.highlight .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.highlight .gi { color: #00A000 } /* Generic.Inserted */
+.highlight .go { color: #888888 } /* Generic.Output */
+.highlight .gp { color: #c65d09; font-weight: bold } /* Generic.Prompt */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.highlight .gt { color: #0044DD } /* Generic.Traceback */
+.highlight .kc { color: #007020; font-weight: bold } /* Keyword.Constant */
+.highlight .kd { color: #007020; font-weight: bold } /* Keyword.Declaration */
+.highlight .kn { color: #007020; font-weight: bold } /* Keyword.Namespace */
+.highlight .kp { color: #007020 } /* Keyword.Pseudo */
+.highlight .kr { color: #007020; font-weight: bold } /* Keyword.Reserved */
+.highlight .kt { color: #902000 } /* Keyword.Type */
+.highlight .m { color: #40a070 } /* Literal.Number */
+.highlight .s { color: #4070a0 } /* Literal.String */
+.highlight .na { color: #4070a0 } /* Name.Attribute */
+.highlight .nb { color: #007020 } /* Name.Builtin */
+.highlight .nc { color: #0e84b5; font-weight: bold } /* Name.Class */
+.highlight .no { color: #60add5 } /* Name.Constant */
+.highlight .nd { color: #555555; font-weight: bold } /* Name.Decorator */
+.highlight .ni { color: #d55537; font-weight: bold } /* Name.Entity */
+.highlight .ne { color: #007020 } /* Name.Exception */
+.highlight .nf { color: #06287e } /* Name.Function */
+.highlight .nl { color: #002070; font-weight: bold } /* Name.Label */
+.highlight .nn { color: #0e84b5; font-weight: bold } /* Name.Namespace */
+.highlight .nt { color: #062873; font-weight: bold } /* Name.Tag */
+.highlight .nv { color: #bb60d5 } /* Name.Variable */
+.highlight .ow { color: #007020; font-weight: bold } /* Operator.Word */
+.highlight .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight .mb { color: #40a070 } /* Literal.Number.Bin */
+.highlight .mf { color: #40a070 } /* Literal.Number.Float */
+.highlight .mh { color: #40a070 } /* Literal.Number.Hex */
+.highlight .mi { color: #40a070 } /* Literal.Number.Integer */
+.highlight .mo { color: #40a070 } /* Literal.Number.Oct */
+.highlight .sb { color: #4070a0 } /* Literal.String.Backtick */
+.highlight .sc { color: #4070a0 } /* Literal.String.Char */
+.highlight .sd { color: #4070a0; font-style: italic } /* Literal.String.Doc */
+.highlight .s2 { color: #4070a0 } /* Literal.String.Double */
+.highlight .se { color: #4070a0; font-weight: bold } /* Literal.String.Escape */
+.highlight .sh { color: #4070a0 } /* Literal.String.Heredoc */
+.highlight .si { color: #70a0d0; font-style: italic } /* Literal.String.Interpol */
+.highlight .sx { color: #c65d09 } /* Literal.String.Other */
+.highlight .sr { color: #235388 } /* Literal.String.Regex */
+.highlight .s1 { color: #4070a0 } /* Literal.String.Single */
+.highlight .ss { color: #517918 } /* Literal.String.Symbol */
+.highlight .bp { color: #007020 } /* Name.Builtin.Pseudo */
+.highlight .vc { color: #bb60d5 } /* Name.Variable.Class */
+.highlight .vg { color: #bb60d5 } /* Name.Variable.Global */
+.highlight .vi { color: #bb60d5 } /* Name.Variable.Instance */
+.highlight .il { color: #40a070 } /* Literal.Number.Integer.Long */</style>
+<h1>visual studio code</h1>
+
+<p><a href="javascript:if(confirm(%27https://code.visualstudio.com/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27https://code.visualstudio.com/%27" tppabs="https://code.visualstudio.com/">Visual Studio Code</a>（以下简称vsc）最近更新到了0.9.2版本</p>
+
+<p><img src="img/0.png" tppabs="http://i5ting.github.io/vsc/img/0.png" alt=""></p>
+
+<ul>
+<li>vsc是一个比较潮比较新的编辑器（跨平台Mac OS X、Windows和 Linux ）</li>
+<li>vsc功能和textmate、sublime、notepad++，ultraedit等比较，毫不逊色</li>
+<li>vsc尤其是在nodejs（调试）和typescript、go上支持尤其好</li>
+<li>vsc提供了自定义 Debugger Adapter 和 VSCode Debug Protocol 从而实现自己的调试器</li>
+</ul>
+
+<p>值得一学，目前在我的团队内部已经大面积推广，反馈不错</p>
+
+<h2>介绍</h2>
+
+<p>vsc的宣传语是：</p>
+<div class="highlight"><pre><span class="w"> </span><span class="err">一个运行于</span><span class="w"> </span><span class="vg">Mac</span><span class="w"> </span><span class="vg">OS</span><span class="w"> </span><span class="vg">X</span><span class="err">、</span><span class="vg">Windows</span><span class="err">和</span><span class="w"> </span><span class="vg">Linux</span><span class="w"> </span><span class="err">之上的，针对于编写现代</span><span class="w"> </span><span class="vg">Web</span><span class="w"> </span><span class="err">和云应用的跨平台源代码编辑器。</span>
+</pre></div>
+<p>按它说的，vsc特别适合来作为前端开发编辑器。</p>
+
+<p>内置html开发神器emmet(zencoding),对css及其相关编译型语言Less和Sass都有很好的支持。</p>
+
+<p>当然，最nice的还是写js代码了，这也是我接下来要着重介绍的功能。</p>
+
+<p>目前vsc已经开源了：</p>
+
+<ul>
+<li>代码https://github.com/Microsoft/vscode</li>
+<li>官方博客http://blogs.msdn.com/b/vscode/?Redirected=true</li>
+<li>roadmap https://github.com/Microsoft/vscode/wiki/Roadmap</li>
+<li>支持go语言 https://github.com/Microsoft/vscode-go</li>
+</ul>
+
+<p>连mattn都在玩了https://github.com/mattn/vscode-openvim</p>
+
+<h2>特性</h2>
+
+<ul>
+<li>Free但不开源（目前已经开源）</li>
+<li>Build（构建）和 debug（调试） 现代web和云应用(尤其是JavaScript、TypeScript、C#、ASP.NET v5 和 Nodejs)</li>
+<li>跨平台支持Linux, Mac OSX, and Windows</li>
+<li>支持语法自动补全，智能提示</li>
+<li>内置html开发神器emmet</li>
+<li>速度、调试效率非常快</li>
+<li>支持多主题（配色方案）0.9.1之后更爽</li>
+<li>对于其他编辑器的高效操作和快捷键都有继承（训练习惯的时候会讲）</li>
+<li>插件系统</li>
+</ul>
+
+<h2>系统要求</h2>
+
+<ul>
+<li>Ubuntu Desktop 14.04</li>
+<li>OS X Yosemite</li>
+<li>Windows 8.0, 8.1 and 10 (x86 and x64)</li>
+</ul>
+
+<p>另外 Linux 还需要额外的</p>
+
+<ul>
+<li>GLIBCXX version 3.4.15 or later</li>
+<li>GLIBC version 2.15 or later</li>
+</ul>
+
+<h2>安装</h2>
+
+<p>从 https://code.visualstudio.com/ 下载对应平台的安装文件，安装即可。</p>
+
+<p>如果是mac系统，加简单的命令行</p>
+<div class="highlight"><pre><span class="cp">[</span><span class="nx">sudo</span><span class="cp">]</span><span class="x"> npm install -g coden</span>
+</pre></div>
+<p>当前目录打开vsc编辑器</p>
+<div class="highlight"><pre><span class="nv">$ </span>vsc
+</pre></div>
+<p>每次去桌面找快捷方式是非常傻的办法，终端里输入几个字母就可以搞定，又何必那么费劲呢？</p>
+
+<p>键盘一定比鼠标操作快，你还是用鼠标么？土不土？</p>
+
+<p>这个模块是nodejs写的，后面会讲</p>
+
+<h2>功能区说明</h2>
+
+<p><img src="img/1.png" tppabs="http://i5ting.github.io/vsc/img/1.png" alt=""></p>
+
+<p>功能区1：4大主菜单</p>
+
+<ol>
+<li>Explore</li>
+<li>Search</li>
+<li>Git</li>
+<li>Debug</li>
+</ol>
+
+<p>分别是文件夹，搜索，git和调试</p>
+
+<p>功能区2：二级菜单</p>
+
+<p>点击每个主菜单都会显示对应的二级菜单，比如Explore就是打开的目录，具体在后面讲解</p>
+
+<p>功能区3：编辑区</p>
+
+<p>我们最常用的编码区</p>
+
+<p><img src="img/5.png" tppabs="http://i5ting.github.io/vsc/img/5.png" alt=""></p>
+
+<p>功能区4：信息显示区</p>
+
+<p>当前git信息，格式，字符编码等</p>
+
+<p><img src="img/3.png" tppabs="http://i5ting.github.io/vsc/img/3.png" alt=""></p>
+<div class="highlight"><pre><span class="vg">master</span><span class="o">+</span><span class="w"> </span><span class="il">0</span><span class="err">↓</span><span class="w"> </span><span class="il">1</span><span class="err">↑</span>
+</pre></div>
+<ul>
+<li>master代表当前git分支是master分支</li>
+<li>0↓ 代表远端repo没有本地的代码信息</li>
+<li>1↑ 代表本地有1个提交需要push到服务器</li>
+</ul>
+
+<p>点击此处，会弹出</p>
+<div class="highlight"><pre><span class="vg">git</span><span class="w"> </span><span class="vg">checkout</span><span class="w"> </span><span class="err">输入</span><span class="vg">git</span><span class="err">分支名</span>
+</pre></div>
+<p>切换分支,很贴心</p>
+
+<p><img src="img/2.png" tppabs="http://i5ting.github.io/vsc/img/2.png" alt=""></p>
+
+<p>语法校验，哪里出错，哪里有警告点击一下此处就都能看到，但不是完全准，算仅供参考吧</p>
+
+<p><img src="img/4.png" tppabs="http://i5ting.github.io/vsc/img/4.png" alt=""></p>
+
+<ul>
+<li>Ln = line 第几行</li>
+<li>Col = column 第几列</li>
+<li>UTF-8 是字符编码</li>
+<li>LF 是换行方式，点击即可切换。 选项说明
+
+<ul>
+<li>1）LF是line feed的缩写，中文意思是换行 </li>
+<li>2）CRLF 是carriagereturnlinefeed的缩写。中文意思是回车换行。</li>
+</ul></li>
+<li>Markdown 代表当前根据后缀识别的语言，用于语法高亮渲染</li>
+<li>☺ 是意见反馈</li>
+</ul>
+
+<p>稍微点评一下，微软的界面做的还是下了功夫的，细节处理的不错</p>
+
+<p>Integrate with External Tools via Tasks</p>
+
+<p>https://code.visualstudio.com/docs/editor/tasks</p>
+
+<p>vsc还是支持各种task，Gulp, Grunt 或 Jake等</p>
+
+<p>常见的各种编译，如markdown编译成html，sass编译成css，coffee或typescript编译成js等</p>
+
+<p>当也有各种语法编码校验</p>
+
+<h2>Workbench主菜单说明</h2>
+
+<h3>Explore</h3>
+
+<p>这个菜单主要是对文件夹和文件的管理</p>
+
+<p>这里有2个概念</p>
+
+<ol>
+<li>WORKING FILES</li>
+<li>DIR</li>
+</ol>
+
+<p>DIR很好理解，就是你当前打开的文件夹</p>
+
+<p>working files是已打开的所有文件，如果此时点击右上角的分屏按钮，可以把文件放到对应的编辑区里。</p>
+
+<p>打开文件夹在菜单里，快捷键command + o</p>
+
+<h3>Search</h3>
+
+<p>常见的各种搜索都支持了，很强大</p>
+
+<p><img src="img/6.png" tppabs="http://i5ting.github.io/vsc/img/6.png" alt=""></p>
+
+<p>如果设置快捷键cmd+2，直接定位到搜索框，输入文字后，直接回车就是全文搜索</p>
+
+<h3>Git</h3>
+
+<p>git是目前最常用的版本控制软件，推荐命令行操作，这样对原理理解的更深入，可以避免很多gui莫名其妙的问题</p>
+
+<p>vsc对它进行了抽象，提供的功能，刚刚好够用</p>
+
+<p><img src="img/7.png" tppabs="http://i5ting.github.io/vsc/img/7.png" alt=""></p>
+
+<p>它还有diff功能，虽然大部分时间我用命令行，但我也会用它的diff和commit的</p>
+
+<p><img src="img/18.png" tppabs="http://i5ting.github.io/vsc/img/18.png" alt=""></p>
+
+<p>简单明了</p>
+
+<p>下面给出一些git学习资料（如果熟悉，自动跳过）</p>
+
+<ul>
+<li><a href="javascript:if(confirm(%27http://gitbeijing.com/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://gitbeijing.com/%27" tppabs="http://gitbeijing.com/">搬进 Github</a></li>
+<li><a href="javascript:if(confirm(%27http://www.bootcss.com/p/git-guide/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.bootcss.com/p/git-guide/%27" tppabs="http://www.bootcss.com/p/git-guide/">git-guide</a></li>
+<li><a href="javascript:if(confirm(%27https://git.oschina.net/wzw/git-quick-start  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27https://git.oschina.net/wzw/git-quick-start%27" tppabs="https://git.oschina.net/wzw/git-quick-start">git入门gif演示</a></li>
+</ul>
+
+<p>要注意：vsc不提供创建git项目功能，所以需要先创建git项目，然后打开再用它编辑</p>
+
+<h3>Debug</h3>
+
+<p>为什么选用vsc，一个原因就是因为调试</p>
+
+<ul>
+<li>node-inspector虽好，项目已大特别慢，这方面vsc做了不少优化</li>
+<li>tdd/bdd虽好，还不能完全实现</li>
+</ul>
+
+<p>vsc官方说</p>
+<div class="highlight"><pre><span class="vg">We</span><span class="w"> </span><span class="vg">improved</span><span class="w"> </span><span class="vg">stepping</span><span class="w"> </span><span class="vg">performance</span><span class="w"> </span><span class="vg">by</span><span class="w"> </span><span class="vg">loading</span><span class="w"> </span><span class="vg">the</span><span class="w"> </span><span class="vg">scopes</span><span class="w"> </span><span class="vg">and</span><span class="w"> </span><span class="vg">variables</span><span class="w"> </span>
+<span class="vg">of</span><span class="w"> </span><span class="vg">stack</span><span class="w"> </span><span class="vg">frames</span><span class="w"> </span><span class="vg">lazily</span><span class="o">.</span><span class="w"> </span><span class="vg">This</span><span class="w"> </span><span class="vg">improvement</span><span class="w"> </span><span class="vg">is</span><span class="w"> </span><span class="vg">based</span><span class="w"> </span><span class="vg">on</span><span class="w"> </span><span class="vg">a</span><span class="w"> </span><span class="vg">protocol</span><span class="w"> </span><span class="vg">change</span>
+<span class="vg">that</span><span class="w"> </span><span class="vg">affects</span><span class="w"> </span><span class="vg">all</span><span class="w"> </span><span class="vg">debug</span><span class="w"> </span><span class="vg">adapters</span><span class="o">.</span>
+</pre></div>
+<p>意思就是他们做了很多优化</p>
+
+<p>使用中，确实比node-inspector快很多</p>
+
+<p>vsc调试使用方法也很简单,步骤如下：</p>
+
+<ul>
+<li>打开要调试的文件，按f5,编辑器会生成一个launch.json</li>
+<li>修改launch.json相关内容，主要是name和program字段，改成和你项目对应的</li>
+<li>点击编辑器左侧长得像蜘蛛的那个按钮</li>
+<li>点击左上角DEBUG后面的按钮，启动调试</li>
+<li>打断点，尽情调试（只要你会chrome调试，一模一样）</li>
+</ul>
+
+<p><img src="img/2.gif" tppabs="http://i5ting.github.io/vsc/img/2.gif" alt=""></p>
+
+<h2>express调试实例</h2>
+
+<p>这是我们最常用的调试</p>
+
+<p>通过创建express项目构建，调试来演示vsc的具体用法</p>
+
+<h3>创建express项目</h3>
+
+<p>使用express-generator</p>
+<div class="highlight"><pre><span class="err">➜</span><span class="w">  </span><span class="vg">examples</span><span class="w"> </span><span class="nl">git:</span><span class="p">(</span><span class="vg">master</span><span class="p">)</span><span class="w"> </span><span class="err">✗</span><span class="w"> </span><span class="vg">express</span><span class="w"> </span><span class="vg">helloworld</span>
+
+<span class="w">   </span><span class="vg">create</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="vg">helloworld</span>
+<span class="w">   </span><span class="vg">create</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="vg">helloworld</span><span class="o">/</span><span class="vg">package</span><span class="o">.</span><span class="vg">json</span>
+<span class="w">   </span><span class="vg">create</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="vg">helloworld</span><span class="o">/</span><span class="vg">app</span><span class="o">.</span><span class="vg">js</span>
+<span class="w">   </span><span class="vg">create</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="vg">helloworld</span><span class="o">/</span><span class="vg">public</span>
+<span class="w">   </span><span class="vg">create</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="vg">helloworld</span><span class="o">/</span><span class="vg">public</span><span class="o">/</span><span class="vg">javascripts</span>
+<span class="w">   </span><span class="vg">create</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="vg">helloworld</span><span class="o">/</span><span class="vg">public</span><span class="o">/</span><span class="vg">images</span>
+<span class="w">   </span><span class="vg">create</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="vg">helloworld</span><span class="o">/</span><span class="vg">public</span><span class="o">/</span><span class="vg">stylesheets</span>
+<span class="w">   </span><span class="vg">create</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="vg">helloworld</span><span class="o">/</span><span class="vg">public</span><span class="o">/</span><span class="vg">stylesheets</span><span class="o">/</span><span class="vg">style</span><span class="o">.</span><span class="vg">css</span>
+<span class="w">   </span><span class="vg">create</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="vg">helloworld</span><span class="o">/</span><span class="vg">routes</span>
+<span class="w">   </span><span class="vg">create</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="vg">helloworld</span><span class="o">/</span><span class="vg">routes</span><span class="o">/</span><span class="vg">index</span><span class="o">.</span><span class="vg">js</span>
+<span class="w">   </span><span class="vg">create</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="vg">helloworld</span><span class="o">/</span><span class="vg">routes</span><span class="o">/</span><span class="vg">users</span><span class="o">.</span><span class="vg">js</span>
+<span class="w">   </span><span class="vg">create</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="vg">helloworld</span><span class="o">/</span><span class="vg">views</span>
+<span class="w">   </span><span class="vg">create</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="vg">helloworld</span><span class="o">/</span><span class="vg">views</span><span class="o">/</span><span class="vg">index</span><span class="o">.</span><span class="vg">jade</span>
+<span class="w">   </span><span class="vg">create</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="vg">helloworld</span><span class="o">/</span><span class="vg">views</span><span class="o">/</span><span class="vg">layout</span><span class="o">.</span><span class="vg">jade</span>
+<span class="w">   </span><span class="vg">create</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="vg">helloworld</span><span class="o">/</span><span class="vg">views</span><span class="o">/</span><span class="vg">error</span><span class="o">.</span><span class="vg">jade</span>
+<span class="w">   </span><span class="vg">create</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="vg">helloworld</span><span class="o">/</span><span class="vg">bin</span>
+<span class="w">   </span><span class="vg">create</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="vg">helloworld</span><span class="o">/</span><span class="vg">bin</span><span class="o">/</span><span class="vg">www</span>
+
+<span class="w">   </span><span class="vg">install</span><span class="w"> </span><span class="nl">dependencies:</span>
+<span class="w">     </span><span class="err">$</span><span class="w"> </span><span class="vg">cd</span><span class="w"> </span><span class="vg">helloworld</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="vg">npm</span><span class="w"> </span><span class="vg">install</span>
+
+<span class="w">   </span><span class="vg">run</span><span class="w"> </span><span class="vg">the</span><span class="w"> </span><span class="nl">app:</span>
+<span class="w">     </span><span class="err">$</span><span class="w"> </span><span class="vg">DEBUG</span><span class="o">=</span><span class="nl">helloworld:</span><span class="o">*</span><span class="w"> </span><span class="vg">npm</span><span class="w"> </span><span class="vg">start</span>
+
+<span class="err">➜</span><span class="w">  </span><span class="vg">examples</span><span class="w"> </span><span class="nl">git:</span><span class="p">(</span><span class="vg">master</span><span class="p">)</span><span class="w"> </span><span class="err">✗</span><span class="w"> </span><span class="vg">cd</span><span class="w"> </span><span class="vg">helloworld</span><span class="w"> </span>
+<span class="err">➜</span><span class="w">  </span><span class="vg">helloworld</span><span class="w"> </span><span class="nl">git:</span><span class="p">(</span><span class="vg">master</span><span class="p">)</span><span class="w"> </span><span class="err">✗</span><span class="w"> </span><span class="vg">npm</span><span class="w"> </span><span class="vg">install</span>
+<span class="err">➜</span><span class="w">  </span><span class="vg">helloworld</span><span class="w"> </span><span class="nl">git:</span><span class="p">(</span><span class="vg">master</span><span class="p">)</span><span class="w"> </span><span class="err">✗</span><span class="w"> </span><span class="vg">npm</span><span class="w"> </span><span class="vg">start</span>
+</pre></div>
+<p>测试express项目是正常的。</p>
+
+<p>说明：如果是自己的项目，需要自己构建git版本控制的，faq里有具体说明。</p>
+
+<h3>修改launch.json的内容</h3>
+
+<p>输入command + t快速定位文件：.vscode/launch.json</p>
+
+<p>修改launch.json的内容</p>
+<div class="highlight"><pre><span class="p">{</span>
+<span class="w">    </span><span class="s2">&quot;version&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;0.1.0&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="o">//</span><span class="w"> </span><span class="vg">List</span><span class="w"> </span><span class="vg">of</span><span class="w"> </span><span class="vg">configurations</span><span class="o">.</span><span class="w"> </span><span class="vg">Add</span><span class="w"> </span><span class="vg">new</span><span class="w"> </span><span class="vg">configurations</span><span class="w"> </span><span class="vg">or</span><span class="w"> </span><span class="vg">edit</span><span class="w"> </span><span class="vg">existing</span><span class="w"> </span><span class="vg">ones</span><span class="o">.</span>
+<span class="w">    </span><span class="o">//</span><span class="w"> </span><span class="vg">ONLY</span><span class="w"> </span><span class="s2">&quot;node&quot;</span><span class="w"> </span><span class="vg">and</span><span class="w"> </span><span class="s2">&quot;mono&quot;</span><span class="w"> </span><span class="vg">are</span><span class="w"> </span><span class="vg">supported</span><span class="p">,</span><span class="w"> </span><span class="vg">change</span><span class="w"> </span><span class="s2">&quot;type&quot;</span><span class="w"> </span><span class="vg">to</span><span class="w"> </span><span class="vg">switch</span><span class="o">.</span>
+<span class="w">    </span><span class="s2">&quot;configurations&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="o">//</span><span class="w"> </span><span class="vg">Name</span><span class="w"> </span><span class="vg">of</span><span class="w"> </span><span class="vg">configuration</span><span class="p">;</span><span class="w"> </span><span class="vg">appears</span><span class="w"> </span><span class="vg">in</span><span class="w"> </span><span class="vg">the</span><span class="w"> </span><span class="vg">launch</span><span class="w"> </span><span class="vg">configuration</span><span class="w"> </span><span class="vg">drop</span><span class="w"> </span><span class="vg">down</span><span class="w"> </span><span class="vg">menu</span><span class="o">.</span>
+<span class="w">            </span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Launch helloworld&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="o">//</span><span class="w"> </span><span class="vg">Type</span><span class="w"> </span><span class="vg">of</span><span class="w"> </span><span class="vg">configuration</span><span class="o">.</span><span class="w"> </span><span class="vg">Possible</span><span class="w"> </span><span class="nl">values:</span><span class="w"> </span><span class="s2">&quot;node&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;mono&quot;</span><span class="o">.</span>
+<span class="w">            </span><span class="s2">&quot;type&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;node&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="o">//</span><span class="w"> </span><span class="vg">Workspace</span><span class="w"> </span><span class="vg">relative</span><span class="w"> </span><span class="vg">or</span><span class="w"> </span><span class="vg">absolute</span><span class="w"> </span><span class="vg">path</span><span class="w"> </span><span class="vg">to</span><span class="w"> </span><span class="vg">the</span><span class="w"> </span><span class="vg">program</span><span class="o">.</span>
+<span class="w">            </span><span class="s2">&quot;program&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;examples/helloworld/bin/www&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="o">//</span><span class="w"> </span><span class="vg">Automatically</span><span class="w"> </span><span class="vg">stop</span><span class="w"> </span><span class="vg">program</span><span class="w"> </span><span class="vg">after</span><span class="w"> </span><span class="vg">launch</span><span class="o">.</span>
+<span class="w">            </span><span class="s2">&quot;stopOnEntry&quot;</span><span class="o">:</span><span class="w"> </span><span class="vg">false</span><span class="p">,</span>
+<span class="w">            </span><span class="o">//</span><span class="w"> </span><span class="vg">Command</span><span class="w"> </span><span class="vg">line</span><span class="w"> </span><span class="vg">arguments</span><span class="w"> </span><span class="vg">passed</span><span class="w"> </span><span class="vg">to</span><span class="w"> </span><span class="vg">the</span><span class="w"> </span><span class="vg">program</span><span class="o">.</span>
+<span class="w">            </span><span class="s2">&quot;args&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[],</span>
+<span class="w">            </span><span class="o">//</span><span class="w"> </span><span class="vg">Workspace</span><span class="w"> </span><span class="vg">relative</span><span class="w"> </span><span class="vg">or</span><span class="w"> </span><span class="vg">absolute</span><span class="w"> </span><span class="vg">path</span><span class="w"> </span><span class="vg">to</span><span class="w"> </span><span class="vg">the</span><span class="w"> </span><span class="vg">working</span><span class="w"> </span><span class="vg">directory</span><span class="w"> </span><span class="vg">of</span><span class="w"> </span><span class="vg">the</span><span class="w"> </span><span class="vg">program</span><span class="w"> </span><span class="vg">being</span><span class="w"> </span><span class="vg">debugged</span><span class="o">.</span><span class="w"> </span><span class="vg">Default</span><span class="w"> </span><span class="vg">is</span><span class="w"> </span><span class="vg">the</span><span class="w"> </span><span class="vg">current</span><span class="w"> </span><span class="vg">workspace</span><span class="o">.</span>
+<span class="w">            </span><span class="s2">&quot;cwd&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;.&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="o">//</span><span class="w"> </span><span class="vg">Workspace</span><span class="w"> </span><span class="vg">relative</span><span class="w"> </span><span class="vg">or</span><span class="w"> </span><span class="vg">absolute</span><span class="w"> </span><span class="vg">path</span><span class="w"> </span><span class="vg">to</span><span class="w"> </span><span class="vg">the</span><span class="w"> </span><span class="vg">runtime</span><span class="w"> </span><span class="vg">executable</span><span class="w"> </span><span class="vg">to</span><span class="w"> </span><span class="vg">be</span><span class="w"> </span><span class="vg">used</span><span class="o">.</span><span class="w"> </span><span class="vg">Default</span><span class="w"> </span><span class="vg">is</span><span class="w"> </span><span class="vg">the</span><span class="w"> </span><span class="vg">runtime</span><span class="w"> </span><span class="vg">executable</span><span class="w"> </span><span class="vg">on</span><span class="w"> </span><span class="vg">the</span><span class="w"> </span><span class="vg">PATH</span><span class="o">.</span>
+<span class="w">            </span><span class="s2">&quot;runtimeExecutable&quot;</span><span class="o">:</span><span class="w"> </span><span class="vg">null</span><span class="p">,</span>
+<span class="w">            </span><span class="o">//</span><span class="w"> </span><span class="vg">Optional</span><span class="w"> </span><span class="vg">arguments</span><span class="w"> </span><span class="vg">passed</span><span class="w"> </span><span class="vg">to</span><span class="w"> </span><span class="vg">the</span><span class="w"> </span><span class="vg">runtime</span><span class="w"> </span><span class="vg">executable</span><span class="o">.</span>
+<span class="w">            </span><span class="s2">&quot;runtimeArgs&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;--nolazy&quot;</span><span class="p">],</span>
+<span class="w">            </span><span class="o">//</span><span class="w"> </span><span class="vg">Environment</span><span class="w"> </span><span class="vg">variables</span><span class="w"> </span><span class="vg">passed</span><span class="w"> </span><span class="vg">to</span><span class="w"> </span><span class="vg">the</span><span class="w"> </span><span class="vg">program</span><span class="o">.</span>
+<span class="w">            </span><span class="s2">&quot;env&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="s2">&quot;NODE_ENV&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;development&quot;</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="o">//</span><span class="w"> </span><span class="vg">Use</span><span class="w"> </span><span class="vg">JavaScript</span><span class="w"> </span><span class="vg">source</span><span class="w"> </span><span class="vg">maps</span><span class="w"> </span><span class="p">(</span><span class="vg">if</span><span class="w"> </span><span class="vg">they</span><span class="w"> </span><span class="vg">exist</span><span class="p">)</span><span class="o">.</span>
+<span class="w">            </span><span class="s2">&quot;sourceMaps&quot;</span><span class="o">:</span><span class="w"> </span><span class="vg">false</span><span class="p">,</span>
+<span class="w">            </span><span class="o">//</span><span class="w"> </span><span class="vg">If</span><span class="w"> </span><span class="vg">JavaScript</span><span class="w"> </span><span class="vg">source</span><span class="w"> </span><span class="vg">maps</span><span class="w"> </span><span class="vg">are</span><span class="w"> </span><span class="vg">enabled</span><span class="p">,</span><span class="w"> </span><span class="vg">the</span><span class="w"> </span><span class="vg">generated</span><span class="w"> </span><span class="vg">code</span><span class="w"> </span><span class="vg">is</span><span class="w"> </span><span class="vg">expected</span><span class="w"> </span><span class="vg">in</span><span class="w"> </span><span class="vg">this</span><span class="w"> </span><span class="vg">directory</span><span class="o">.</span>
+<span class="w">            </span><span class="s2">&quot;outDir&quot;</span><span class="o">:</span><span class="w"> </span><span class="vg">null</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Attach&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;type&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;node&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="o">//</span><span class="w"> </span><span class="vg">TCP</span><span class="o">/</span><span class="vg">IP</span><span class="w"> </span><span class="vg">address</span><span class="o">.</span><span class="w"> </span><span class="vg">Default</span><span class="w"> </span><span class="vg">is</span><span class="w"> </span><span class="s2">&quot;localhost&quot;</span><span class="o">.</span>
+<span class="w">            </span><span class="s2">&quot;address&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;localhost&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="o">//</span><span class="w"> </span><span class="vg">Port</span><span class="w"> </span><span class="vg">to</span><span class="w"> </span><span class="vg">attach</span><span class="w"> </span><span class="vg">to</span><span class="o">.</span>
+<span class="w">            </span><span class="s2">&quot;port&quot;</span><span class="o">:</span><span class="w"> </span><span class="il">5858</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;sourceMaps&quot;</span><span class="o">:</span><span class="w"> </span><span class="vg">false</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+<p>核心内容</p>
+<div class="highlight"><pre><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Launch helloworld&quot;</span><span class="p">,</span>
+<span class="s2">&quot;type&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;node&quot;</span><span class="p">,</span>
+<span class="s2">&quot;program&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;examples/helloworld/bin/www&quot;</span><span class="p">,</span>
+</pre></div>
+<p>program是要执行的express的入口。</p>
+
+<p>这里的helloworld是项目，所以找到/bin/www目录即可。</p>
+
+<h3>点击调试按钮</h3>
+
+<p><img src="img/8.png" tppabs="http://i5ting.github.io/vsc/img/8.png" alt=""></p>
+
+<p>会弹出一个窗口，执行如下命令</p>
+<div class="highlight"><pre><span class="vg">cd</span><span class="w"> </span><span class="c1">&#39;/Users/sang/workspace/github/vsc-doc&#39;; env &#39;NODE_ENV=development&#39;   &#39;node&#39; &#39;--debug-brk=44412&#39; &#39;--nolazy&#39; &#39;examples/helloworld/bin/www&#39;</span>
+<span class="vg">Debugger</span><span class="w"> </span><span class="vg">listening</span><span class="w"> </span><span class="vg">on</span><span class="w"> </span><span class="vg">port</span><span class="w"> </span><span class="il">44412</span>
+</pre></div>
+<p>其实node-inspector也是这个原理的。</p>
+
+<h3>增加断点</h3>
+
+<p><img src="img/9.png" tppabs="http://i5ting.github.io/vsc/img/9.png" alt=""></p>
+
+<h3>此时访问</h3>
+<div class="highlight"><pre><span class="vg">curl</span><span class="w"> </span><span class="nl">http:</span><span class="o">//</span><span class="mf">127.0.0.1</span><span class="o">:</span><span class="il">3200</span><span class="o">/</span>
+</pre></div>
+<h3>进入调试界面</h3>
+
+<p><img src="img/10.png" tppabs="http://i5ting.github.io/vsc/img/10.png" alt=""></p>
+
+<p>和chrome的调试是一样的。</p>
+
+<p>点击1）处按钮，打开控制台，配合调试，在控制台里查看对应的变量值</p>
+
+<p>另外值得说明的是二级菜单里4个部分</p>
+
+<ul>
+<li>a）variables变量</li>
+<li>b）watch观察</li>
+<li>c）call stack 调用栈</li>
+<li>d）break points 断点</li>
+</ul>
+
+<p>它和chrome的调试也是一样的，此处就不多讲了。</p>
+
+<h3>更多</h3>
+
+<ul>
+<li><a href="javascript:if(confirm(%27https://cnodejs.org/topic/5463f6e872f405c829029f7e  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27https://cnodejs.org/topic/5463f6e872f405c829029f7e%27" tppabs="https://cnodejs.org/topic/5463f6e872f405c829029f7e">node-debug 三法三例之node debugger + node inspector</a></li>
+<li><a href="javascript:if(confirm(%27http://i5ting.github.io/nodejs-video/node-inspector.mov  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://i5ting.github.io/nodejs-video/node-inspector.mov%27" tppabs="http://i5ting.github.io/nodejs-video/node-inspector.mov">node-inspector视频</a></li>
+<li><a href="javascript:if(confirm(%27http://i5ting.github.io/nodejs-video/node-debug.mov  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://i5ting.github.io/nodejs-video/node-debug.mov%27" tppabs="http://i5ting.github.io/nodejs-video/node-debug.mov">node-debug视频</a></li>
+</ul>
+
+<p>课后作业：亲手debug一次，感受一下vsc的魅力</p>
+
+<h2>自动补全(智能提示)</h2>
+
+<p>因为之前微软推出了typescript语言，结合tsd文件，用visual studio写typescript代码是相当爽的，智能提示的功能非常nb。</p>
+
+<p>这个功能理所应当也被vsc继承了。</p>
+
+<p>vsc的自动补全用的是tsd。</p>
+
+<p>TSD is a package manager to search and install TypeScript definition files directly from the community driven DefinitelyTyped repository.</p>
+
+<p>https://github.com/DefinitelyTyped/tsd</p>
+
+<p>和npm很像，有木有？</p>
+
+<p>目前主流的前端类库/框架，包括node.js及其模块/框架都有相应的tsd文件，可以去<a href="javascript:if(confirm(%27https://github.com/borisyankov/DefinitelyTyped  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27https://github.com/borisyankov/DefinitelyTyped%27" tppabs="https://github.com/borisyankov/DefinitelyTyped">DefinitelyTyped</a>上找一下。</p>
+
+<p>那么就可以安装tsd之后，使用</p>
+<div class="highlight"><pre><span class="vg">npm</span><span class="w"> </span><span class="vg">install</span><span class="w"> </span><span class="vg">tsd</span><span class="w"> </span><span class="o">-</span><span class="vg">g</span>
+<span class="vg">cd</span><span class="w"> </span><span class="vg">vsc</span><span class="o">-</span><span class="vg">doc</span>
+<span class="vg">tsd</span><span class="w"> </span><span class="vg">query</span><span class="w"> </span><span class="o">-</span><span class="vg">r</span><span class="w"> </span><span class="o">-</span><span class="vg">o</span><span class="w"> </span><span class="o">-</span><span class="vg">a</span><span class="w"> </span><span class="vg">install</span><span class="w"> </span><span class="vg">express</span>
+</pre></div>
+<p>和npm很像，有木有？</p>
+
+<p>此时看一下当前目录，下面的express.d.ts文件即是具体提示用的。</p>
+<div class="highlight"><pre><span class="vg">typings</span><span class="o">/</span><span class="vg">express</span><span class="o">/</span><span class="vg">express</span><span class="o">.</span><span class="vg">d</span><span class="o">.</span><span class="vg">ts</span>
+</pre></div>
+<p>在代码编辑区里，输入CTRL+SPACE(默认快捷键)就可以有提示了。</p>
+
+<p><img src="img/15.png" tppabs="http://i5ting.github.io/vsc/img/15.png" alt=""></p>
+
+<p>目前node.d.ts版本还是0.12.0，和node v4的api差不了多少</p>
+
+<h2>自定义快捷键</h2>
+
+<p>上面是基本的操作，下面看点高效的使用：自定义快捷键</p>
+
+<h3>查看快捷键</h3>
+
+<p>菜单view里找 Command Palette项</p>
+<div class="highlight"><pre><span class="vg">view</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="vg">Command</span><span class="w"> </span><span class="vg">Palette</span><span class="err">（调色板）</span>
+</pre></div>
+<p>对应的快捷键是<code>shift + command + p</code></p>
+
+<p>敲完后，输入<code>tri</code></p>
+
+<p><img src="img/16.png" tppabs="http://i5ting.github.io/vsc/img/16.png" alt=""></p>
+
+<h3>修改快捷键</h3>
+
+<p>但是CTRL+SPACE在我的电脑里已经占用了，所以还是需要修改一下的，见下图</p>
+
+<p>打开快捷键配置</p>
+
+<p><img src="img/11.png" tppabs="http://i5ting.github.io/vsc/img/11.png" alt=""></p>
+
+<p>修改如下</p>
+
+<p><img src="img/12.png" tppabs="http://i5ting.github.io/vsc/img/12.png" alt=""></p>
+
+<p>即把</p>
+<div class="highlight"><pre><span class="c1">// Place your key bindings in this file to overwrite the defaults</span>
+<span class="p">[</span>
+    <span class="p">{</span> <span class="s">&quot;key&quot;</span><span class="o">:</span> <span class="s">&quot;ctrl+space&quot;</span><span class="p">,</span>            <span class="s">&quot;command&quot;</span><span class="o">:</span> <span class="s">&quot;editor.action.triggerSuggest&quot;</span><span class="p">,</span>
+                                     <span class="s">&quot;when&quot;</span><span class="o">:</span> <span class="s">&quot;editorTextFocus&quot;</span> <span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+<p>改成</p>
+<div class="highlight"><pre><span class="c1">// Place your key bindings in this file to overwrite the defaults</span>
+<span class="p">[</span>
+    <span class="p">{</span> <span class="s">&quot;key&quot;</span><span class="o">:</span> <span class="s">&quot;shift+space&quot;</span><span class="p">,</span>            <span class="s">&quot;command&quot;</span><span class="o">:</span> <span class="s">&quot;editor.action.triggerSuggest&quot;</span><span class="p">,</span>
+                                     <span class="s">&quot;when&quot;</span><span class="o">:</span> <span class="s">&quot;editorTextFocus&quot;</span> <span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+<p>此时，就是输入SHIFT+SPACE就可以有提示了</p>
+
+<p>说明：key就是快捷键，command是编辑器的操作</p>
+
+<h3>Workbench主菜单快捷键</h3>
+
+<p>熟悉mac的都知道folder里的cmd+1|2|3|4切换文件夹显示，其实我们也可以使用类似的快捷键来提高工作效率</p>
+
+<p>xcode里面也是，所以command键是我最常用的快捷键</p>
+
+<p><img src="img/19.png" tppabs="http://i5ting.github.io/vsc/img/19.png" alt=""></p>
+
+<p>推荐配置如下，按照顺序来，好记</p>
+<div class="highlight"><pre><span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="s2">&quot;key&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;cmd+1&quot;</span><span class="p">,</span><span class="w">           </span><span class="s2">&quot;command&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;workbench.view.explorer&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="s2">&quot;key&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;cmd+2&quot;</span><span class="p">,</span><span class="w">           </span><span class="s2">&quot;command&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;workbench.view.search&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="s2">&quot;key&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;cmd+3&quot;</span><span class="p">,</span><span class="w">           </span><span class="s2">&quot;command&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;workbench.view.git&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="s2">&quot;key&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;cmd+4&quot;</span><span class="p">,</span><span class="w">           </span><span class="s2">&quot;command&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;workbench.view.debug&quot;</span><span class="w"> </span><span class="p">}</span>
+</pre></div>
+<p>这样配置可以让大拇指最少移动，以大拇指为中心，快速切换，速度非常快</p>
+
+<h3>working files切换</h3>
+
+<p>一个编辑区里，vsc是不缓存的，毕竟是js写的，相对较弱，这其实是vsc的一个优化</p>
+
+<p>所以cmd + p 打开了文件之后，之前的文件就找不到了</p>
+
+<p>实际上都存到working files里了，只要我们切换working files即可</p>
+
+<p>mac下<code>ctrl + -</code>和<code>shift+ctrl + -</code>切换当前working files</p>
+
+<p>还是很爽的</p>
+
+<h3>快捷键配置原理</h3>
+
+<p>原理说明：我们可以看到2个配置文件，一个是不能修改的，另一个是空的，后面的会把前面的覆盖</p>
+
+<p>这其实和<a href="javascript:if(confirm(%27http://i5ting.github.io/How-to-write-jQuery-plugin/build/jquery.plugin.html  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://i5ting.github.io/How-to-write-jQuery-plugin/build/jquery.plugin.html#10501%27" tppabs="http://i5ting.github.io/How-to-write-jQuery-plugin/build/jquery.plugin.html#10501">jquery插件里的配置项</a>原理是类似的</p>
+<div class="highlight"><pre><span class="c1">// 将defaults 和 options 参数合并到{}</span>
+<span class="k">var</span> <span class="n">opts</span> <span class="o">=</span> <span class="err">$</span><span class="p">.</span><span class="n">extend</span><span class="p">({},</span><span class="err">$</span><span class="p">.</span><span class="n">fn</span><span class="p">.</span><span class="n">tab</span><span class="p">.</span><span class="n">defaults</span><span class="p">,</span><span class="n">options</span><span class="p">);</span>
+</pre></div>
+<p>把options里的覆盖$.fn.tab.defaults。</p>
+
+<p>合并后的的配置项，再和{}合并，至少保证配置是{}</p>
+
+<h2>快捷键(默认)</h2>
+
+<ul>
+<li>自动补全    command + SPACE</li>
+<li>快速打开文件 command + o</li>
+<li>快速定位文件 command + p</li>
+<li>分割编辑窗口 command + \ </li>
+<li>关闭当前窗口 command + w</li>
+<li>隐藏二级菜单 command + b</li>
+<li>放大 command + =</li>
+<li>缩小 command + -</li>
+<li>插入表情 ctrl + command + space</li>
+</ul>
+
+<p>搜索</p>
+
+<ul>
+<li>当前文档里搜索 command + -</li>
+<li>所有文档里搜索 shift + command + -</li>
+</ul>
+
+<h2>我的玩法（常用快捷键）</h2>
+
+<ul>
+<li><code>ctrl + command + f</code> 放大到全屏</li>
+<li>设置Workbench主菜单快捷键，然后就有了<code>command + 1到4</code>的快捷键，快速切换</li>
+<li><code>command + b</code> 显示或隐藏（奇数次和偶数次）二级菜单，让可视区更大</li>
+<li>可视区内<code>command + \</code> 新建编辑窗口（尤其是markdown里面，一个编写，一个预览<code>shift + command + v</code>）</li>
+<li>可视区内<code>command + w</code> 关闭编辑窗口</li>
+<li><code>command + p</code> 快速打开文件</li>
+<li>使用<code>ctrl + -</code>或者<code>shift + ctrl + -</code>切换working files</li>
+<li>当前文档里搜索 <code>command + -</code></li>
+<li>所有文档里搜索 <code>shift + command + -</code></li>
+<li><code>shift + opt + f</code>格式化</li>
+</ul>
+
+<h2>语音控制</h2>
+
+<p>fn fn</p>
+
+<p>待测</p>
+
+<h2>自定义主题</h2>
+
+<p>打开主题配置</p>
+
+<p><img src="img/13.png" tppabs="http://i5ting.github.io/vsc/img/13.png" alt=""></p>
+
+<p>选一个自己喜欢的主题吧</p>
+
+<p><img src="img/14.png" tppabs="http://i5ting.github.io/vsc/img/14.png" alt=""></p>
+
+<h2>html开发神器emmet（Zen coding）</h2>
+
+<p>举个简单例子，在index.html里</p>
+
+<p>输入link，然后tab键，就会生成下面的代码</p>
+<div class="highlight"><pre><span class="o">&lt;</span><span class="vg">link</span><span class="w"> </span><span class="vg">rel</span><span class="o">=</span><span class="s2">&quot;stylesheet&quot;</span><span class="w"> </span><span class="vg">href</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="o">&gt;</span>
+</pre></div>
+<p>连续输入类和id，比如p.bar#foo，会自动生成： </p>
+<div class="highlight"><pre><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;bar&quot;</span> <span class="na">id=</span><span class="s">&quot;foo&quot;</span><span class="nt">&gt;&lt;/p&gt;</span>  
+</pre></div>
+<p>输入h1{foo}和a[href=#]，就可以自动生成如下代码：</p>
+<div class="highlight"><pre><span class="nt">&lt;h1&gt;</span>foo<span class="nt">&lt;/h1&gt;</span>  
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>  
+</pre></div>
+<p>写html代码足够快了，享受吧，更多用法见 </p>
+
+<ul>
+<li>http://www.iteye.com/news/27580</li>
+<li>http://docs.emmet.io/</li>
+</ul>
+
+<p>写其他语言也有这样的神奇，见后面讲的code snippets章节</p>
+
+<h2>Node API 查看</h2>
+
+<p>在写node.js代码的时候，有时会忘记某个模块中有哪些方法及其用法，经常要去官网翻一下api文档。</p>
+
+<p>这里介绍下怎么使用vsc来搞定这一问题。</p>
+
+<ol>
+<li>打开vsc控制台（Help &gt; Toggle Developer Tools &gt; Console）</li>
+<li>在控制台写代码，查询模块方法。</li>
+</ol>
+
+<p>过程如下图：</p>
+
+<p><img src="img/1.gif" tppabs="http://i5ting.github.io/vsc/img/1.gif" alt=""></p>
+
+<p>vsc是用atom-shell(现在叫electron)写的，这玩意和node-webkit（现在叫nw.js）一样，都是把node.js和chrome结合起来的工具，所以可以这么使用。</p>
+
+<p>不过vsc使用到的node.js模块并不多，比如引用util和vm等会报错，用node-webkit就不会这样。</p>
+
+<p>更好的查看api办法是使用docset查看文档，比如zeal或dash（后面会讲）</p>
+
+<h2>缓存文件</h2>
+
+<p>按照一般app的设计，都是主应用，和用户目录下的缓存文件，把用户自定义的或使用生成的文件都放到缓存文件目录里。鉴于此，我们来找找code.app的缓存文件，或许能发现点有用的东西</p>
+
+<p>可参照 https://code.visualstudio.com/docs/customization/userandworkspace 理解</p>
+
+<h3>缓存目录详情</h3>
+
+<p>目录是 <code>/Users/sang/Library/Application Support/Code</code> </p>
+<div class="highlight"><pre><span class="err">➜</span><span class="w">  </span><span class="vg">Code</span><span class="w">  </span><span class="vg">pwd</span>
+<span class="o">/</span><span class="vg">Users</span><span class="o">/</span><span class="vg">sang</span><span class="o">/</span><span class="vg">Library</span><span class="o">/</span><span class="vg">Application</span><span class="w"> </span><span class="vg">Support</span><span class="o">/</span><span class="vg">Code</span>
+<span class="err">➜</span><span class="w">  </span><span class="vg">Code</span><span class="w">  </span><span class="vg">tree</span><span class="w"> </span><span class="o">.</span><span class="w"> </span><span class="o">-</span><span class="vg">L</span><span class="w"> </span><span class="il">2</span>
+<span class="o">.</span>
+<span class="err">├──</span><span class="w"> </span><span class="vg">DevTools</span><span class="w"> </span><span class="vg">Extensions</span>
+<span class="err">├──</span><span class="w"> </span><span class="vg">File</span><span class="w"> </span><span class="vg">System</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="il">000</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">└──</span><span class="w"> </span><span class="vg">Origins</span>
+<span class="err">├──</span><span class="w"> </span><span class="vg">GPUCache</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">data_0</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">data_1</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">data_2</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">data_3</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">└──</span><span class="w"> </span><span class="vg">index</span>
+<span class="err">├──</span><span class="w"> </span><span class="vg">Local</span><span class="w"> </span><span class="vg">Storage</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">chrome</span><span class="o">-</span><span class="vg">devtools_devtools_0</span><span class="o">.</span><span class="vg">localstorage</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">chrome</span><span class="o">-</span><span class="vg">devtools_devtools_0</span><span class="o">.</span><span class="vg">localstorage</span><span class="o">-</span><span class="vg">journal</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">file__0</span><span class="o">.</span><span class="vg">localstorage</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">└──</span><span class="w"> </span><span class="vg">file__0</span><span class="o">.</span><span class="vg">localstorage</span><span class="o">-</span><span class="vg">journal</span>
+<span class="err">├──</span><span class="w"> </span><span class="vg">QuotaManager</span>
+<span class="err">├──</span><span class="w"> </span><span class="vg">QuotaManager</span><span class="o">-</span><span class="vg">journal</span>
+<span class="err">├──</span><span class="w"> </span><span class="vg">User</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">keybindings</span><span class="o">.</span><span class="vg">json</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">launch</span><span class="o">.</span><span class="vg">json</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">└──</span><span class="w"> </span><span class="vg">snippets</span>
+<span class="err">├──</span><span class="w"> </span><span class="vg">databases</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">Databases</span><span class="o">.</span><span class="vg">db</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">└──</span><span class="w"> </span><span class="vg">Databases</span><span class="o">.</span><span class="vg">db</span><span class="o">-</span><span class="vg">journal</span>
+<span class="err">└──</span><span class="w"> </span><span class="vg">storage</span><span class="o">.</span><span class="vg">json</span>
+
+<span class="nl">8</span><span class="w"> </span><span class="vg">directories</span><span class="p">,</span><span class="w"> </span><span class="il">17</span><span class="w"> </span><span class="vg">files</span>
+</pre></div>
+<p>这些文件我们能看懂的就尽量看，看不懂的也无所谓，如果想深度了解里面的机制，还是有必要看看的。</p>
+
+<h3>storage.json</h3>
+
+<p>storage.json是code.app的核心配置文件，就像npm里的package.json一样。</p>
+
+<p>看一下具体内容</p>
+<div class="highlight"><pre><span class="err">➜</span><span class="w">  </span><span class="vg">Code</span><span class="w">  </span><span class="vg">cat</span><span class="w"> </span><span class="vg">storage</span><span class="o">.</span><span class="vg">json</span><span class="w"> </span>
+<span class="p">{</span>
+<span class="w">    </span><span class="s2">&quot;updateChannel&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;stable&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;windowUIState&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="s2">&quot;width&quot;</span><span class="o">:</span><span class="w"> </span><span class="il">1280</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;height&quot;</span><span class="o">:</span><span class="w"> </span><span class="il">773</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;mode&quot;</span><span class="o">:</span><span class="w"> </span><span class="il">1</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;x&quot;</span><span class="o">:</span><span class="w"> </span><span class="il">0</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;y&quot;</span><span class="o">:</span><span class="w"> </span><span class="il">23</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="s2">&quot;openedPathsList&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="s2">&quot;folders&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[],</span>
+<span class="w">        </span><span class="s2">&quot;files&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">            </span><span class="s2">&quot;/Users/sang/Library/Application Support/Code/User/snippets/javascript.json&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;/Users/sang/workspace/github/vsc-doc/typings/node/node.d.ts&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;/Users/sang/workspace/github/vsc-doc&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;/Users/sang/workspace/github/vsc/index.js&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;/Users/sang/workspace/moa/rate-cache&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;/Users/sang/workspace/aircos/aircos-plugins&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;/Users/sang/workspace/github/vsc&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;/Users/sang/test/go&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;/Users/sang/test/go/views&quot;</span>
+<span class="w">        </span><span class="p">]</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="s2">&quot;theme&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;vs&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;folderPickerWorkingDir&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;/Users/sang/workspace/moa&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;lastActiveOpenedPath&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;/Users/sang/workspace/github/vsc-doc&quot;</span>
+<span class="p">}</span><span class="o">%</span><span class="w"> </span>
+</pre></div>
+<p>说明</p>
+
+<ul>
+<li>updateChannel 应该检查版本更新的设置</li>
+<li>windowUIState 界面状态，还记得分割编辑窗口吧？</li>
+<li>openedPathsList 应该是File -&gt; Open Recent里的内容</li>
+<li>theme 用户配色方案</li>
+<li>folderPickerWorkingDir 执行command + o 打开的目录</li>
+<li>lastActiveOpenedPath   最后打开的目录（这个目录是我执行vsc直接打开的）</li>
+</ul>
+
+<p>为什么要了解它呢？</p>
+
+<p>如果你理解了上面的配置起什么作用，那么你是不是可以干很多坏事儿呢？比如</p>
+
+<ul>
+<li>备份</li>
+<li>可视化</li>
+<li>其他hack</li>
+</ul>
+
+<p>剩下的自己发挥吧</p>
+
+<h3>当前用户配置</h3>
+
+<p>上面的目录结构基本都可以看懂，对应当前用户来说</p>
+<div class="highlight"><pre><span class="err">├──</span><span class="w"> </span><span class="vg">User</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">keybindings</span><span class="o">.</span><span class="vg">json</span><span class="p">(</span><span class="err">用户自定义的快捷键</span><span class="p">)</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">launch</span><span class="o">.</span><span class="vg">json</span><span class="p">(</span><span class="err">调试加载的文件</span><span class="p">)</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">└──</span><span class="w"> </span><span class="vg">snippets</span>
+</pre></div>
+<h3>用户快捷键</h3>
+
+<p>比如快捷键</p>
+<div class="highlight"><pre><span class="err">➜</span><span class="w">  </span><span class="vg">Code</span><span class="w">  </span><span class="vg">cat</span><span class="w"> </span><span class="vg">User</span><span class="o">/</span><span class="vg">keybindings</span><span class="o">.</span><span class="vg">json</span><span class="w"> </span>
+<span class="o">//</span><span class="w"> </span><span class="vg">Place</span><span class="w"> </span><span class="vg">your</span><span class="w"> </span><span class="vg">key</span><span class="w"> </span><span class="vg">bindings</span><span class="w"> </span><span class="vg">in</span><span class="w"> </span><span class="vg">this</span><span class="w"> </span><span class="vg">file</span><span class="w"> </span><span class="vg">to</span><span class="w"> </span><span class="vg">overwrite</span><span class="w"> </span><span class="vg">the</span><span class="w"> </span><span class="vg">defaults</span>
+<span class="p">[</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="s2">&quot;key&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;ctrl+f12&quot;</span><span class="p">,</span><span class="w">                   </span><span class="s2">&quot;command&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;editor.action.goToDeclaration&quot;</span><span class="p">,</span>
+<span class="w">                                     </span><span class="s2">&quot;when&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;editorTextFocus&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="s2">&quot;key&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;shift+space&quot;</span><span class="p">,</span><span class="w">            </span><span class="s2">&quot;command&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;editor.action.triggerSuggest&quot;</span><span class="p">,</span>
+<span class="w">                                     </span><span class="s2">&quot;when&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;editorTextFocus&quot;</span><span class="w"> </span><span class="p">}</span>
+<span class="p">]</span><span class="o">%</span><span class="w">       </span>
+</pre></div>
+<p>是不是和我们之前配置的一样?</p>
+
+<h3>用户调试加载的文件</h3>
+<div class="highlight"><pre><span class="vg">User</span><span class="o">/</span><span class="vg">launch</span><span class="o">.</span><span class="vg">json</span>
+</pre></div>
+<p>和上面的是一样的，就不打印了。如果想每次都定义一下的话，可以自己修改，以后对当前用户就是全局的了</p>
+
+<h3>snippets</h3>
+
+<p>User/snippets是snippets存放位置，比如javascript的定义</p>
+
+<p>见</p>
+<div class="highlight"><pre><span class="vg">User</span><span class="o">/</span><span class="vg">snippets</span><span class="o">/</span><span class="vg">javascript</span><span class="o">.</span><span class="vg">json</span>
+</pre></div>
+<p>snippets中文是代码片段，是自定义智能提示用的</p>
+
+<h3>自定义snippet</h3>
+<div class="highlight"><pre><span class="w">     </span><span class="o">//</span><span class="w"> </span><span class="vg">Place</span><span class="w"> </span><span class="vg">your</span><span class="w"> </span><span class="vg">snippets</span><span class="w"> </span><span class="vg">for</span><span class="w"> </span><span class="vg">JavaScript</span><span class="w"> </span><span class="vg">here</span><span class="o">.</span><span class="w"> </span><span class="vg">Each</span><span class="w"> </span><span class="vg">snippet</span><span class="w"> </span><span class="vg">is</span><span class="w"> </span><span class="vg">defined</span><span class="w"> </span><span class="vg">under</span><span class="w"> </span><span class="vg">a</span><span class="w"> </span><span class="vg">snippet</span><span class="w"> </span><span class="vg">name</span><span class="w"> </span><span class="vg">and</span><span class="w"> </span><span class="vg">has</span><span class="w"> </span><span class="vg">a</span><span class="w"> </span><span class="vg">prefix</span><span class="p">,</span><span class="w"> </span><span class="vg">body</span><span class="w"> </span><span class="vg">and</span><span class="w"> </span>
+<span class="w">     </span><span class="o">//</span><span class="w"> </span><span class="vg">description</span><span class="o">.</span><span class="w"> </span><span class="vg">The</span><span class="w"> </span><span class="vg">prefix</span><span class="w"> </span><span class="vg">is</span><span class="w"> </span><span class="vg">what</span><span class="w"> </span><span class="vg">is</span><span class="w"> </span><span class="vg">used</span><span class="w"> </span><span class="vg">to</span><span class="w"> </span><span class="vg">trigger</span><span class="w"> </span><span class="vg">the</span><span class="w"> </span><span class="vg">snippet</span><span class="w"> </span><span class="vg">and</span><span class="w"> </span><span class="vg">the</span><span class="w"> </span><span class="vg">body</span><span class="w"> </span><span class="vg">will</span><span class="w"> </span><span class="vg">be</span><span class="w"> </span><span class="vg">expanded</span><span class="w"> </span><span class="vg">and</span><span class="w"> </span><span class="vg">inserted</span><span class="o">.</span><span class="w"> </span><span class="vg">Possible</span><span class="w"> </span><span class="vg">variables</span><span class="w"> </span><span class="nl">are:</span>
+<span class="w">     </span><span class="o">//</span><span class="w"> </span><span class="err">$</span><span class="il">1</span><span class="p">,</span><span class="w"> </span><span class="err">$</span><span class="il">2</span><span class="w"> </span><span class="vg">for</span><span class="w"> </span><span class="vg">tab</span><span class="w"> </span><span class="vg">stops</span><span class="p">,</span><span class="w"> </span><span class="err">$</span><span class="p">{</span><span class="vg">id</span><span class="p">}</span><span class="w"> </span><span class="vg">and</span><span class="w"> </span><span class="err">$</span><span class="p">{</span><span class="nl">id:</span><span class="vg">label</span><span class="p">}</span><span class="w"> </span><span class="vg">and</span><span class="w"> </span><span class="err">$</span><span class="p">{</span><span class="il">1</span><span class="o">:</span><span class="vg">label</span><span class="p">}</span><span class="w"> </span><span class="vg">for</span><span class="w"> </span><span class="vg">variables</span><span class="o">.</span><span class="w"> </span><span class="vg">Variables</span><span class="w"> </span><span class="vg">with</span><span class="w"> </span><span class="vg">the</span><span class="w"> </span><span class="vg">same</span><span class="w"> </span><span class="vg">id</span><span class="w"> </span><span class="vg">are</span><span class="w"> </span><span class="vg">connected</span><span class="o">.</span>
+<span class="w">     </span><span class="o">//</span><span class="w"> </span><span class="nl">Example:</span>
+<span class="w">     </span><span class="s2">&quot;Print to console&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="s2">&quot;prefix&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;log&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;body&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">            </span><span class="s2">&quot;console.log(&#39;$1&#39;);&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;$2&quot;</span>
+<span class="w">        </span><span class="p">],</span>
+<span class="w">        </span><span class="s2">&quot;description&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Log output to console&quot;</span>
+<span class="w">    </span><span class="p">}</span>
+</pre></div>
+<p>说明：</p>
+
+<ul>
+<li>&quot;Print to console&quot; 是智能提示显示的</li>
+<li>&quot;prefix&quot; 是用户输入的字母，比如本例中输入log自动提示</li>
+<li>当用户触发此snippet的时候，会按照&quot;body&quot;里代码生成</li>
+<li>$1代表光标位置</li>
+</ul>
+
+<p>自己按照上面的方法定义自己的snippets，可以提高很多工作效率哦</p>
+
+<p>下面看一下如何在代码中使用snippet，如图</p>
+
+<p><img src="img/17.png" tppabs="http://i5ting.github.io/vsc/img/17.png" alt=""></p>
+
+<p>和vim、nodepad++里的录制宏类似</p>
+
+<h2>庖丁解牛code.app</h2>
+
+<ul>
+<li>electron 打包成可执行文件</li>
+<li>使用了一些atom模块、第三方模块</li>
+</ul>
+
+<p>app的安装目录是 <code>/Applications/Visual\ Studio\ Code.app</code>,右键show package content，然后一层一层的找里面的内容就可以了</p>
+<div class="highlight"><pre><span class="o">/</span><span class="vg">Applications</span><span class="o">/</span><span class="vg">Visual</span><span class="o">\</span><span class="w"> </span><span class="vg">Studio</span><span class="o">\</span><span class="w"> </span><span class="vg">Code</span><span class="o">.</span><span class="vg">app</span><span class="o">/</span><span class="vg">Contents</span><span class="o">/</span><span class="vg">Resources</span>
+</pre></div>
+<p>下面我们来看一下里面的内容</p>
+<div class="highlight"><pre><span class="err">➜</span><span class="w">  </span><span class="vg">Resources</span><span class="w">  </span><span class="vg">pwd</span>
+<span class="o">/</span><span class="vg">Applications</span><span class="o">/</span><span class="vg">Visual</span><span class="w"> </span><span class="vg">Studio</span><span class="w"> </span><span class="vg">Code</span><span class="o">.</span><span class="vg">app</span><span class="o">/</span><span class="vg">Contents</span><span class="o">/</span><span class="vg">Resources</span>
+<span class="err">➜</span><span class="w">  </span><span class="vg">Resources</span><span class="w">  </span><span class="vg">tree</span><span class="w"> </span><span class="o">.</span><span class="w"> </span><span class="o">-</span><span class="vg">L</span><span class="w"> </span><span class="il">3</span>
+<span class="o">.</span>
+<span class="err">├──</span><span class="w"> </span><span class="vg">Code</span><span class="o">.</span><span class="vg">icns</span>
+<span class="err">├──</span><span class="w"> </span><span class="vg">Credits</span><span class="o">.</span><span class="vg">rtf</span>
+<span class="err">├──</span><span class="w"> </span><span class="vg">app</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">Credits_43</span><span class="mf">.0.2357.65</span><span class="o">.</span><span class="vg">html</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">ThirdPartyNotices</span><span class="o">.</span><span class="vg">txt</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">license</span><span class="o">.</span><span class="vg">txt</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">node_modules</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">applicationinsights</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">chokidar</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">emmet</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">first</span><span class="o">-</span><span class="vg">mate</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">getmac</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">graceful</span><span class="o">-</span><span class="vg">fs</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">http</span><span class="o">-</span><span class="vg">proxy</span><span class="o">-</span><span class="vg">agent</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">https</span><span class="o">-</span><span class="vg">proxy</span><span class="o">-</span><span class="vg">agent</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">iconv</span><span class="o">-</span><span class="vg">lite</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">sax</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">semver</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">└──</span><span class="w"> </span><span class="vg">winreg</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">out</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">bootstrap</span><span class="o">.</span><span class="vg">js</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">└──</span><span class="w"> </span><span class="vg">vs</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">package</span><span class="o">.</span><span class="vg">json</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">plugins</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">declares</span><span class="o">.</span><span class="vg">d</span><span class="o">.</span><span class="vg">ts</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">lib</span><span class="o">.</span><span class="vg">core</span><span class="o">.</span><span class="vg">d</span><span class="o">.</span><span class="vg">ts</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">node</span><span class="o">.</span><span class="vg">d</span><span class="o">.</span><span class="vg">ts</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">tsconfig</span><span class="o">.</span><span class="vg">json</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">debug</span><span class="o">.</span><span class="vg">mono</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">debug</span><span class="o">.</span><span class="vg">node</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">bat</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">clojure</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">coffeescript</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">cpp</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">csharp</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">csharp</span><span class="o">.</span><span class="vg">o</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">css</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">dockerfile</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">fsharp</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">go</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">groovy</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">html</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">ini</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">jade</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">java</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">javascript</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">lua</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">makefile</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">markdown</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">objective</span><span class="o">-</span><span class="vg">c</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">perl</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">php</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">powershell</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">python</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">r</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">ruby</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">rust</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">shellscript</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">swift</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">tsql</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">typescript</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">vb</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">xml</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">yaml</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">linter</span><span class="o">.</span><span class="vg">eslint</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">linter</span><span class="o">.</span><span class="vg">jshint</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">└──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">theme</span><span class="o">.</span><span class="vg">starterkit</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">└──</span><span class="w"> </span><span class="vg">vso</span><span class="o">.</span><span class="vg">png</span>
+<span class="err">├──</span><span class="w"> </span><span class="vg">atom</span><span class="o">.</span><span class="vg">asar</span>
+<span class="err">├──</span><span class="w"> </span><span class="vg">en</span><span class="o">.</span><span class="vg">lproj</span>
+<span class="err">├──</span><span class="w"> </span><span class="vg">en_GB</span><span class="o">.</span><span class="vg">lproj</span>
+<span class="err">├──</span><span class="w"> </span><span class="vg">file</span><span class="o">.</span><span class="vg">icns</span>
+<span class="err">├──</span><span class="w"> </span><span class="vg">zh_CN</span><span class="o">.</span><span class="vg">lproj</span>
+<span class="err">└──</span><span class="w"> </span><span class="vg">zh_TW</span><span class="o">.</span><span class="vg">lproj</span>
+
+<span class="nl">60</span><span class="w"> </span><span class="vg">directories</span><span class="p">,</span><span class="w"> </span><span class="il">14</span><span class="w"> </span><span class="vg">files</span>
+</pre></div>
+<h3>依赖的模块</h3>
+<div class="highlight"><pre><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">node_modules</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">applicationinsights</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">chokidar</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">emmet</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">first</span><span class="o">-</span><span class="vg">mate</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">getmac</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">graceful</span><span class="o">-</span><span class="vg">fs</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">http</span><span class="o">-</span><span class="vg">proxy</span><span class="o">-</span><span class="vg">agent</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">https</span><span class="o">-</span><span class="vg">proxy</span><span class="o">-</span><span class="vg">agent</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">iconv</span><span class="o">-</span><span class="vg">lite</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">sax</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">semver</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">└──</span><span class="w"> </span><span class="vg">winreg</span>
+</pre></div>
+<h3>插件</h3>
+<div class="highlight"><pre><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">plugins</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">declares</span><span class="o">.</span><span class="vg">d</span><span class="o">.</span><span class="vg">ts</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">lib</span><span class="o">.</span><span class="vg">core</span><span class="o">.</span><span class="vg">d</span><span class="o">.</span><span class="vg">ts</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">node</span><span class="o">.</span><span class="vg">d</span><span class="o">.</span><span class="vg">ts</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">tsconfig</span><span class="o">.</span><span class="vg">json</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">debug</span><span class="o">.</span><span class="vg">mono</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">debug</span><span class="o">.</span><span class="vg">node</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">bat</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">clojure</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">coffeescript</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">cpp</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">csharp</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">csharp</span><span class="o">.</span><span class="vg">o</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">css</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">dockerfile</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">fsharp</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">go</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">groovy</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">html</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">ini</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">jade</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">java</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">javascript</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">lua</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">makefile</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">markdown</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">objective</span><span class="o">-</span><span class="vg">c</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">perl</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">php</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">powershell</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">python</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">r</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">ruby</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">rust</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">shellscript</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">swift</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">tsql</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">typescript</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">vb</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">xml</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">language</span><span class="o">.</span><span class="vg">yaml</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">linter</span><span class="o">.</span><span class="vg">eslint</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">linter</span><span class="o">.</span><span class="vg">jshint</span>
+<span class="err">│  </span><span class="w"> </span><span class="err">│  </span><span class="w"> </span><span class="err">└──</span><span class="w"> </span><span class="vg">vs</span><span class="o">.</span><span class="vg">theme</span><span class="o">.</span><span class="vg">starterkit</span>
+</pre></div>
+<p>很多人抱怨，vsc没有提供插件机制，想想还是笑笑吧，机制已经很健全了，开放只是早晚的事儿。</p>
+
+<h3>out目录</h3>
+
+<p>out是一个比较有趣的目录，所有代码都是混淆过的，但可以从其文件名和目录名称看出一些东西</p>
+<div class="highlight"><pre><span class="err">➜</span><span class="w">  </span><span class="vg">out</span><span class="w">  </span><span class="vg">pwd</span>
+<span class="o">/</span><span class="vg">Applications</span><span class="o">/</span><span class="vg">Visual</span><span class="w"> </span><span class="vg">Studio</span><span class="w"> </span><span class="vg">Code</span><span class="o">.</span><span class="vg">app</span><span class="o">/</span><span class="vg">Contents</span><span class="o">/</span><span class="vg">Resources</span><span class="o">/</span><span class="vg">app</span><span class="o">/</span><span class="vg">out</span>
+<span class="err">➜</span><span class="w">  </span><span class="vg">out</span><span class="w">  </span><span class="vg">tree</span><span class="w"> </span><span class="o">.</span><span class="w"> </span><span class="o">-</span><span class="vg">L</span><span class="w"> </span><span class="il">3</span>
+<span class="o">.</span>
+<span class="err">├──</span><span class="w"> </span><span class="vg">bootstrap</span><span class="o">.</span><span class="vg">js</span>
+<span class="err">└──</span><span class="w"> </span><span class="vg">vs</span>
+<span class="w">    </span><span class="err">├──</span><span class="w"> </span><span class="vg">base</span>
+<span class="w">    </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">browser</span>
+<span class="w">    </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">common</span>
+<span class="w">    </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">node</span>
+<span class="w">    </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">parts</span>
+<span class="w">    </span><span class="err">│  </span><span class="w"> </span><span class="err">└──</span><span class="w"> </span><span class="vg">worker</span>
+<span class="w">    </span><span class="err">├──</span><span class="w"> </span><span class="vg">css</span><span class="o">.</span><span class="vg">js</span>
+<span class="w">    </span><span class="err">├──</span><span class="w"> </span><span class="vg">editor</span>
+<span class="w">    </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">browser</span>
+<span class="w">    </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">common</span>
+<span class="w">    </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">contrib</span>
+<span class="w">    </span><span class="err">│  </span><span class="w"> </span><span class="err">└──</span><span class="w"> </span><span class="vg">css</span>
+<span class="w">    </span><span class="err">├──</span><span class="w"> </span><span class="vg">languages</span>
+<span class="w">    </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">annotatedLanguage</span>
+<span class="w">    </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">csharp</span>
+<span class="w">    </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">css</span>
+<span class="w">    </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">handlebars</span>
+<span class="w">    </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">html</span>
+<span class="w">    </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">javascript</span>
+<span class="w">    </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">json</span>
+<span class="w">    </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">less</span>
+<span class="w">    </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">lib</span>
+<span class="w">    </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">markdown</span>
+<span class="w">    </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">php</span>
+<span class="w">    </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">plaintext</span>
+<span class="w">    </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">razor</span>
+<span class="w">    </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">sass</span>
+<span class="w">    </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">typescript</span>
+<span class="w">    </span><span class="err">│  </span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="vg">typescript</span><span class="o">.</span><span class="vg">workbench</span>
+<span class="w">    </span><span class="err">│  </span><span class="w"> </span><span class="err">└──</span><span class="w"> </span><span class="vg">vsxml</span>
+<span class="w">    </span><span class="err">├──</span><span class="w"> </span><span class="vg">loader</span><span class="o">.</span><span class="vg">js</span>
+<span class="w">    </span><span class="err">├──</span><span class="w"> </span><span class="vg">nls</span><span class="o">.</span><span class="vg">js</span>
+<span class="w">    </span><span class="err">├──</span><span class="w"> </span><span class="vg">text</span><span class="o">.</span><span class="vg">js</span>
+<span class="w">    </span><span class="err">└──</span><span class="w"> </span><span class="vg">workbench</span>
+<span class="w">        </span><span class="err">├──</span><span class="w"> </span><span class="vg">browser</span>
+<span class="w">        </span><span class="err">├──</span><span class="w"> </span><span class="vg">electron</span><span class="o">-</span><span class="vg">browser</span>
+<span class="w">        </span><span class="err">├──</span><span class="w"> </span><span class="vg">electron</span><span class="o">-</span><span class="vg">main</span>
+<span class="w">        </span><span class="err">├──</span><span class="w"> </span><span class="vg">parts</span>
+<span class="w">        </span><span class="err">├──</span><span class="w"> </span><span class="vg">services</span>
+<span class="w">        </span><span class="err">├──</span><span class="w"> </span><span class="vg">workbench</span><span class="o">.</span><span class="vg">main</span><span class="o">.</span><span class="vg">css</span>
+<span class="w">        </span><span class="err">├──</span><span class="w"> </span><span class="vg">workbench</span><span class="o">.</span><span class="vg">main</span><span class="o">.</span><span class="vg">js</span>
+<span class="w">        </span><span class="err">├──</span><span class="w"> </span><span class="vg">workbench</span><span class="o">.</span><span class="vg">main</span><span class="o">.</span><span class="vg">nls</span><span class="o">.</span><span class="vg">js</span>
+<span class="w">        </span><span class="err">└──</span><span class="w"> </span><span class="vg">workbench</span><span class="o">.</span><span class="vg">main</span><span class="o">.</span><span class="vg">nls</span><span class="o">.</span><span class="vg">keys</span><span class="o">.</span><span class="vg">js</span>
+
+<span class="nl">36</span><span class="w"> </span><span class="vg">directories</span><span class="p">,</span><span class="w"> </span><span class="il">9</span><span class="w"> </span><span class="vg">files</span>
+</pre></div>
+<p>bootstrap.js是启动的脚本</p>
+
+<p>默认支持的语言</p>
+
+<ul>
+<li>annotatedLanguage</li>
+<li>csharp</li>
+<li>css</li>
+<li>handlebars</li>
+<li>html</li>
+<li>javascript</li>
+<li>json</li>
+<li>less</li>
+<li>markdown</li>
+<li>php</li>
+<li>plaintext</li>
+<li>razor</li>
+<li>sass</li>
+<li>typescript</li>
+<li>vsxml</li>
+</ul>
+
+<p>vs/base/browser/ui/是界面里用的svg图，如果想自定义界面可以自行修改</p>
+
+<p>vs/base/node/terminateProcess.sh写的不错</p>
+<div class="highlight"><pre><span class="c">#!/bin/bash</span>
+
+terminateTree<span class="o">()</span> <span class="o">{</span>
+    <span class="k">for</span> cpid in <span class="k">$(</span>pgrep -P <span class="nv">$1</span><span class="k">)</span><span class="p">;</span> <span class="k">do</span>
+        terminateTree <span class="nv">$cpid</span>
+    <span class="k">done</span>
+    <span class="nb">kill</span> -9 <span class="nv">$1</span> &gt; /dev/null 2&gt;<span class="p">&amp;</span>1
+<span class="o">}</span>
+
+<span class="k">for</span> pid in <span class="nv">$*</span><span class="p">;</span> <span class="k">do</span>
+    terminateTree <span class="nv">$pid</span>
+<span class="k">done</span>
+</pre></div>
+<p>/Applications/Visual Studio Code.app/Contents/Resources/app/out/vs/editor/css是编辑器vs-theme.css样式</p>
+
+<p>/Applications/Visual Studio Code.app/Contents/Resources/app/out/vs/workbench/browser/css是workbench的vs-theme.css样式</p>
+
+<h3>ThirdPartyNotices.txt</h3>
+
+<p>看看它依赖的第三方开源模块</p>
+<div class="highlight"><pre><span class="nl">1</span><span class="o">.</span><span class="w">  </span><span class="vg">amdefine</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">1.0.0</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">jrburke</span><span class="o">/</span><span class="vg">amdefine</span><span class="p">)</span>
+<span class="nl">2</span><span class="o">.</span><span class="w">  </span><span class="vg">anymatch</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">1.3.0</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">es128</span><span class="o">/</span><span class="vg">anymatch</span><span class="p">)</span>
+<span class="nl">3</span><span class="o">.</span><span class="w">  </span><span class="vg">App</span><span class="w"> </span><span class="vg">Insights</span><span class="w"> </span><span class="vg">for</span><span class="w"> </span><span class="vg">Node</span><span class="o">.</span><span class="vg">js</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">0.15.5</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">Microsoft</span><span class="o">/</span><span class="vg">ApplicationInsights</span><span class="o">-</span><span class="vg">node</span><span class="o">.</span><span class="vg">js</span><span class="o">/</span><span class="vg">tree</span><span class="o">/</span><span class="vg">master</span><span class="p">)</span>
+<span class="nl">4</span><span class="o">.</span><span class="w">  </span><span class="vg">array</span><span class="o">-</span><span class="vg">slice</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">0.2.3</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">jonschlinkert</span><span class="o">/</span><span class="vg">array</span><span class="o">-</span><span class="vg">slice</span><span class="p">)</span>
+<span class="nl">5</span><span class="o">.</span><span class="w">  </span><span class="vg">arr</span><span class="o">-</span><span class="vg">diff</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">1.0.1</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">jonschlinkert</span><span class="o">/</span><span class="vg">arr</span><span class="o">-</span><span class="vg">diff</span><span class="o">/</span><span class="vg">tree</span><span class="o">/</span><span class="mf">1.0.1</span><span class="p">)</span>
+<span class="nl">6</span><span class="o">.</span><span class="w">  </span><span class="vg">arrify</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">1.0.0</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">sindresorhus</span><span class="o">/</span><span class="vg">arrify</span><span class="p">)</span>
+<span class="nl">7</span><span class="o">.</span><span class="w">  </span><span class="vg">Async</span><span class="o">-</span><span class="vg">each</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">0.1.6</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">paulmillr</span><span class="o">/</span><span class="vg">async</span><span class="o">-</span><span class="vg">each</span><span class="p">)</span>
+<span class="nl">8</span><span class="o">.</span><span class="w">  </span><span class="vg">atom</span><span class="o">-</span><span class="vg">brightray</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">atom</span><span class="o">/</span><span class="vg">brightray</span><span class="p">)</span>
+<span class="nl">9</span><span class="o">.</span><span class="w">  </span><span class="vg">binary</span><span class="o">-</span><span class="vg">extensions</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">1.3.1</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">sindresorhus</span><span class="o">/</span><span class="vg">binary</span><span class="o">-</span><span class="vg">extensions</span><span class="p">)</span>
+<span class="nl">10</span><span class="o">.</span><span class="w"> </span><span class="vg">braces</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">1.8.0</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">jonschlinkert</span><span class="o">/</span><span class="vg">braces</span><span class="p">)</span>
+<span class="nl">11</span><span class="o">.</span><span class="w"> </span><span class="vg">chjj</span><span class="o">-</span><span class="vg">marked</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">0.3.2</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">npmcomponent</span><span class="o">/</span><span class="vg">chjj</span><span class="o">-</span><span class="vg">marked</span><span class="p">)</span>
+<span class="nl">12</span><span class="o">.</span><span class="w"> </span><span class="vg">chokidar</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">1.0.0</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">paulmillr</span><span class="o">/</span><span class="vg">chokidar</span><span class="p">)</span>
+<span class="nl">13</span><span class="o">.</span><span class="w"> </span><span class="vg">chromium</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">43.0.2357.65</span><span class="w"> </span><span class="p">(</span><span class="nl">http:</span><span class="o">//</span><span class="vg">www</span><span class="o">.</span><span class="vg">chromium</span><span class="o">.</span><span class="vg">org</span><span class="o">/</span><span class="vg">Home</span><span class="p">)</span>
+<span class="nl">14</span><span class="o">.</span><span class="w"> </span><span class="vg">Colorsublime</span><span class="o">-</span><span class="vg">Themes</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">0.1.0</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">Colorsublime</span><span class="o">/</span><span class="vg">Colorsublime</span><span class="o">-</span><span class="vg">Themes</span><span class="p">)</span>
+<span class="nl">15</span><span class="o">.</span><span class="w"> </span><span class="vg">Core</span><span class="o">-</span><span class="vg">util</span><span class="o">-</span><span class="vg">is</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">1.0.1</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">isaacs</span><span class="o">/</span><span class="vg">core</span><span class="o">-</span><span class="vg">util</span><span class="o">-</span><span class="vg">is</span><span class="o">/</span><span class="p">)</span>
+<span class="nl">16</span><span class="o">.</span><span class="w"> </span><span class="vg">debug</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">2.2.0</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">visionmedia</span><span class="o">/</span><span class="vg">debug</span><span class="p">)</span>
+<span class="nl">17</span><span class="o">.</span><span class="w"> </span><span class="vg">debug</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">1.0.4</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">visionmedia</span><span class="o">/</span><span class="vg">debug</span><span class="p">)</span>
+<span class="nl">18</span><span class="o">.</span><span class="w"> </span><span class="vg">debugger</span><span class="o">-</span><span class="vg">libs</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">9.0.21022</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">mono</span><span class="o">/</span><span class="vg">debugger</span><span class="o">-</span><span class="vg">libs</span><span class="p">)</span>
+<span class="nl">19</span><span class="o">.</span><span class="w"> </span><span class="vg">electron</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">0.27.3</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">atom</span><span class="o">/</span><span class="vg">electron</span><span class="p">)</span>
+<span class="nl">20</span><span class="o">.</span><span class="w"> </span><span class="vg">emmet</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">1.3.1</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">emmetio</span><span class="o">/</span><span class="vg">emmet</span><span class="p">)</span>
+<span class="nl">21</span><span class="o">.</span><span class="w"> </span><span class="vg">expand</span><span class="o">-</span><span class="vg">brackets</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">0.1.1</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">jonschlinkert</span><span class="o">/</span><span class="vg">expand</span><span class="o">-</span><span class="vg">brackets</span><span class="p">)</span>
+<span class="nl">22</span><span class="o">.</span><span class="w"> </span><span class="vg">expand</span><span class="o">-</span><span class="vg">range</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">1.8.1</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">jonschlinkert</span><span class="o">/</span><span class="vg">expand</span><span class="o">-</span><span class="vg">range</span><span class="p">)</span>
+<span class="nl">23</span><span class="o">.</span><span class="w"> </span><span class="vg">Extract</span><span class="o">-</span><span class="vg">opts</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">2.2.0</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">bevry</span><span class="o">/</span><span class="vg">extract</span><span class="o">-</span><span class="vg">opts</span><span class="p">)</span>
+<span class="nl">24</span><span class="o">.</span><span class="w"> </span><span class="vg">filename</span><span class="o">-</span><span class="vg">regex</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">2.0.0</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">regexps</span><span class="o">/</span><span class="vg">filename</span><span class="o">-</span><span class="vg">regex</span><span class="p">)</span>
+<span class="nl">25</span><span class="o">.</span><span class="w"> </span><span class="vg">fill</span><span class="o">-</span><span class="vg">range</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">2.2.2</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">jonschlinkert</span><span class="o">/</span><span class="vg">fill</span><span class="o">-</span><span class="vg">range</span><span class="p">)</span>
+<span class="nl">26</span><span class="o">.</span><span class="w"> </span><span class="vg">firstmate</span><span class="w"> </span><span class="p">(</span><span class="vg">alexandrudima</span><span class="p">)</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">4.1.7</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">alexandrudima</span><span class="o">/</span><span class="vg">first</span><span class="o">-</span><span class="vg">mate</span><span class="p">)</span>
+<span class="nl">27</span><span class="o">.</span><span class="w"> </span><span class="vg">for</span><span class="o">-</span><span class="vg">in</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">0.1.4</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">jonschlinkert</span><span class="o">/</span><span class="vg">for</span><span class="o">-</span><span class="vg">in</span><span class="p">)</span>
+<span class="nl">28</span><span class="o">.</span><span class="w"> </span><span class="vg">for</span><span class="o">-</span><span class="vg">own</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">0.1.3</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">jonschlinkert</span><span class="o">/</span><span class="vg">for</span><span class="o">-</span><span class="vg">own</span><span class="p">)</span>
+<span class="nl">29</span><span class="o">.</span><span class="w"> </span><span class="vg">fsevents</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">0.3.6</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">strongloop</span><span class="o">/</span><span class="vg">fsevents</span><span class="p">)</span>
+<span class="nl">30</span><span class="o">.</span><span class="w"> </span><span class="vg">getmac</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">1.0.7</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">bevry</span><span class="o">/</span><span class="vg">getmac</span><span class="p">)</span>
+<span class="nl">31</span><span class="o">.</span><span class="w"> </span><span class="vg">glob</span><span class="o">-</span><span class="vg">base</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">0.2.0</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">jonschlinkert</span><span class="o">/</span><span class="vg">glob</span><span class="o">-</span><span class="vg">base</span><span class="p">)</span>
+<span class="nl">32</span><span class="o">.</span><span class="w"> </span><span class="vg">glob</span><span class="o">-</span><span class="vg">parent</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">1.2.0</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">es128</span><span class="o">/</span><span class="vg">glob</span><span class="o">-</span><span class="vg">parent</span><span class="p">)</span>
+<span class="nl">33</span><span class="o">.</span><span class="w"> </span><span class="vg">graceful</span><span class="o">-</span><span class="vg">fs</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">4.1.2</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">isaacs</span><span class="o">/</span><span class="vg">node</span><span class="o">-</span><span class="vg">graceful</span><span class="o">-</span><span class="vg">fs</span><span class="p">)</span>
+<span class="nl">34</span><span class="o">.</span><span class="w"> </span><span class="vg">http</span><span class="o">-</span><span class="vg">proxy</span><span class="o">-</span><span class="vg">agent</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">0.2.6</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">TooTallNate</span><span class="o">/</span><span class="vg">node</span><span class="o">-</span><span class="vg">http</span><span class="o">-</span><span class="vg">proxy</span><span class="o">-</span><span class="vg">agent</span><span class="p">)</span>
+<span class="nl">35</span><span class="o">.</span><span class="w"> </span><span class="vg">https</span><span class="o">-</span><span class="vg">proxy</span><span class="o">-</span><span class="vg">agent</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">0.3.5</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">TooTallNate</span><span class="o">/</span><span class="vg">node</span><span class="o">-</span><span class="vg">https</span><span class="o">-</span><span class="vg">proxy</span><span class="o">-</span><span class="vg">agent</span><span class="p">)</span>
+<span class="nl">36</span><span class="o">.</span><span class="w"> </span><span class="vg">iconv</span><span class="o">-</span><span class="vg">lite</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">0.4.10</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">ashtuchkin</span><span class="o">/</span><span class="vg">iconv</span><span class="o">-</span><span class="vg">lite</span><span class="p">)</span>
+<span class="nl">37</span><span class="o">.</span><span class="w"> </span><span class="vg">Inherits</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">2.0.1</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">isaacs</span><span class="o">/</span><span class="vg">inherits</span><span class="p">)</span>
+<span class="nl">38</span><span class="o">.</span><span class="w"> </span><span class="vg">Isarray</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">0.0.1</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">juliangruber</span><span class="o">/</span><span class="vg">isarray</span><span class="p">)</span>
+<span class="nl">39</span><span class="o">.</span><span class="w"> </span><span class="vg">is</span><span class="o">-</span><span class="vg">binary</span><span class="o">-</span><span class="vg">path</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">1.0.1</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">sindresorhus</span><span class="o">/</span><span class="vg">is</span><span class="o">-</span><span class="vg">binary</span><span class="o">-</span><span class="vg">path</span><span class="p">)</span>
+<span class="nl">40</span><span class="o">.</span><span class="w"> </span><span class="vg">is</span><span class="o">-</span><span class="vg">dotfile</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">1.0.1</span><span class="w"> </span><span class="p">(</span><span class="nl">ttps:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">jonschlinkert</span><span class="o">/</span><span class="vg">is</span><span class="o">-</span><span class="vg">dotfile</span><span class="p">)</span>
+<span class="nl">41</span><span class="o">.</span><span class="w"> </span><span class="vg">Is</span><span class="o">-</span><span class="vg">equal</span><span class="o">-</span><span class="vg">shallow</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">0.1.2</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">jonschlinkert</span><span class="o">/</span><span class="vg">is</span><span class="o">-</span><span class="vg">equal</span><span class="o">-</span><span class="vg">shallow</span><span class="p">)</span>
+<span class="nl">42</span><span class="o">.</span><span class="w"> </span><span class="vg">is</span><span class="o">-</span><span class="vg">extglob</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">1.0.0</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">jonschlinkert</span><span class="o">/</span><span class="vg">is</span><span class="o">-</span><span class="vg">extglob</span><span class="p">)</span>
+<span class="nl">43</span><span class="o">.</span><span class="w"> </span><span class="vg">is</span><span class="o">-</span><span class="vg">glob</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">1.1.3</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">jonschlinkert</span><span class="o">/</span><span class="vg">is</span><span class="o">-</span><span class="vg">glob</span><span class="p">)</span>
+<span class="nl">44</span><span class="o">.</span><span class="w"> </span><span class="vg">is</span><span class="o">-</span><span class="vg">number</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">1.1.2</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">jonschlinkert</span><span class="o">/</span><span class="vg">is</span><span class="o">-</span><span class="vg">number</span><span class="p">)</span>
+<span class="nl">45</span><span class="o">.</span><span class="w"> </span><span class="vg">isobject</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">1.0.0</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">jonschlinkert</span><span class="o">/</span><span class="vg">isobject</span><span class="p">)</span>
+<span class="nl">46</span><span class="o">.</span><span class="w"> </span><span class="vg">isobject</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">0.2.0</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">jonschlinkert</span><span class="o">/</span><span class="vg">isobject</span><span class="p">)</span>
+<span class="nl">47</span><span class="o">.</span><span class="w"> </span><span class="vg">Is</span><span class="o">-</span><span class="vg">primitive</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">1.0.0</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">jonschlinkert</span><span class="o">/</span><span class="vg">is</span><span class="o">-</span><span class="vg">primitive</span><span class="p">)</span>
+<span class="nl">48</span><span class="o">.</span><span class="w"> </span><span class="vg">Is</span><span class="o">-</span><span class="vg">primitive</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">2.0.0</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">jonschlinkert</span><span class="o">/</span><span class="vg">is</span><span class="o">-</span><span class="vg">primitive</span><span class="p">)</span>
+<span class="nl">49</span><span class="o">.</span><span class="w"> </span><span class="vg">issrc</span><span class="w"> </span><span class="p">(</span><span class="vg">Inno</span><span class="w"> </span><span class="vg">Setup</span><span class="p">)</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">5.5.6</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">jrsoftware</span><span class="o">/</span><span class="vg">issrc</span><span class="p">)</span>
+<span class="nl">50</span><span class="o">.</span><span class="w"> </span><span class="vg">jsbeautifer</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">1.5.10</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">beautify</span><span class="o">-</span><span class="vg">web</span><span class="o">/</span><span class="vg">js</span><span class="o">-</span><span class="vg">beautify</span><span class="p">)</span>
+<span class="nl">51</span><span class="o">.</span><span class="w"> </span><span class="vg">kind</span><span class="o">-</span><span class="vg">of</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">1.1.0</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">jonschlinkert</span><span class="o">/</span><span class="vg">kind</span><span class="o">-</span><span class="vg">of</span><span class="p">)</span>
+<span class="nl">52</span><span class="o">.</span><span class="w"> </span><span class="vg">language</span><span class="o">-</span><span class="vg">closure</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">0.16.0</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">atom</span><span class="o">/</span><span class="vg">language</span><span class="o">-</span><span class="vg">clojure</span><span class="p">)</span>
+<span class="nl">53</span><span class="o">.</span><span class="w"> </span><span class="vg">language</span><span class="o">-</span><span class="vg">groovy</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">0.4.0</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">Jakehp</span><span class="o">/</span><span class="vg">language</span><span class="o">-</span><span class="vg">groovy</span><span class="p">)</span>
+<span class="nl">54</span><span class="o">.</span><span class="w"> </span><span class="vg">language</span><span class="o">-</span><span class="vg">make</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">0.17.0</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">atom</span><span class="o">/</span><span class="vg">language</span><span class="o">-</span><span class="vg">make</span><span class="p">)</span>
+<span class="nl">55</span><span class="o">.</span><span class="w"> </span><span class="vg">language</span><span class="o">-</span><span class="vg">perl</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">0.28.0</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">atom</span><span class="o">/</span><span class="vg">language</span><span class="o">-</span><span class="vg">perl</span><span class="p">)</span>
+<span class="nl">56</span><span class="o">.</span><span class="w"> </span><span class="vg">language</span><span class="o">-</span><span class="vg">php</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">0.29.0</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">atom</span><span class="o">/</span><span class="vg">language</span><span class="o">-</span><span class="vg">php</span><span class="p">)</span>
+<span class="nl">57</span><span class="o">.</span><span class="w"> </span><span class="vg">language</span><span class="o">-</span><span class="vg">rust</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">0.4.4</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">zargony</span><span class="o">/</span><span class="vg">atom</span><span class="o">-</span><span class="vg">language</span><span class="o">-</span><span class="vg">rust</span><span class="p">)</span>
+<span class="nl">58</span><span class="o">.</span><span class="w"> </span><span class="vg">language</span><span class="o">-</span><span class="vg">shellscript</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">0.15.0</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">atom</span><span class="o">/</span><span class="vg">language</span><span class="o">-</span><span class="vg">shellscript</span><span class="p">)</span>
+<span class="nl">59</span><span class="o">.</span><span class="w"> </span><span class="vg">language</span><span class="o">-</span><span class="vg">yaml</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">0.24.0</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">atom</span><span class="o">/</span><span class="vg">language</span><span class="o">-</span><span class="vg">yaml</span><span class="p">)</span>
+<span class="nl">60</span><span class="o">.</span><span class="w"> </span><span class="vg">Libchromiumcontent</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">43.0.2357.65</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">atom</span><span class="o">/</span><span class="vg">libchromiumcontent</span><span class="p">)</span>
+<span class="nl">61</span><span class="o">.</span><span class="w"> </span><span class="vg">Lru</span><span class="o">-</span><span class="vg">cache</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">2.6.4</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">isaacs</span><span class="o">/</span><span class="vg">node</span><span class="o">-</span><span class="vg">lru</span><span class="o">-</span><span class="vg">cache</span><span class="p">)</span>
+<span class="nl">62</span><span class="o">.</span><span class="w"> </span><span class="vg">micromatch</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">2.1.6</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">jonschlinkert</span><span class="o">/</span><span class="vg">micromatch</span><span class="o">/</span><span class="vg">tree</span><span class="o">/</span><span class="mf">2.1.5</span><span class="p">)</span>
+<span class="nl">63</span><span class="o">.</span><span class="w"> </span><span class="vg">minimatch</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">0.2.14</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">isaacs</span><span class="o">/</span><span class="vg">minimatch</span><span class="p">)</span>
+<span class="nl">64</span><span class="o">.</span><span class="w"> </span><span class="vg">ms</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">0.7.1</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">rauchg</span><span class="o">/</span><span class="vg">ms</span><span class="o">.</span><span class="vg">js</span><span class="p">)</span>
+<span class="nl">65</span><span class="o">.</span><span class="w"> </span><span class="vg">ms</span><span class="o">.</span><span class="vg">js</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">0.6.2</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">rauchg</span><span class="o">/</span><span class="vg">ms</span><span class="o">.</span><span class="vg">js</span><span class="p">)</span>
+<span class="nl">66</span><span class="o">.</span><span class="w"> </span><span class="vg">nan</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">1.8.4</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">iojs</span><span class="o">/</span><span class="vg">nan</span><span class="p">)</span>
+<span class="nl">67</span><span class="o">.</span><span class="w"> </span><span class="vg">newtonsoft</span><span class="o">.</span><span class="vg">json</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">6.0.8</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">JamesNK</span><span class="o">/</span><span class="vg">Newtonsoft</span><span class="o">.</span><span class="vg">Json</span><span class="p">)</span>
+<span class="nl">68</span><span class="o">.</span><span class="w"> </span><span class="vg">node</span><span class="o">-</span><span class="vg">agent</span><span class="o">-</span><span class="vg">base</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">1.0.1</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">TooTallNate</span><span class="o">/</span><span class="vg">node</span><span class="o">-</span><span class="vg">agent</span><span class="o">-</span><span class="vg">base</span><span class="o">/</span><span class="p">)</span>
+<span class="nl">69</span><span class="o">.</span><span class="w"> </span><span class="vg">node</span><span class="o">-</span><span class="vg">extend</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">1.2.1</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">justmoon</span><span class="o">/</span><span class="vg">node</span><span class="o">-</span><span class="vg">extend</span><span class="p">)</span>
+<span class="nl">70</span><span class="o">.</span><span class="w"> </span><span class="vg">NodeJS</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">0.10.29</span><span class="w"> </span><span class="p">(</span><span class="nl">http:</span><span class="o">//</span><span class="vg">nodejs</span><span class="o">.</span><span class="vg">org</span><span class="o">/</span><span class="vg">dist</span><span class="o">/</span><span class="vg">v0</span><span class="mf">.10.29</span><span class="o">/</span><span class="p">)</span>
+<span class="nl">71</span><span class="o">.</span><span class="w"> </span><span class="vg">node</span><span class="o">-</span><span class="vg">oniguruma</span><span class="w"> </span><span class="p">(</span><span class="vg">alexandrudima</span><span class="p">)</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">4.1.0</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">alexandrudima</span><span class="o">/</span><span class="vg">node</span><span class="o">-</span><span class="vg">oniguruma</span><span class="p">)</span>
+<span class="nl">72</span><span class="o">.</span><span class="w"> </span><span class="vg">node</span><span class="o">-</span><span class="vg">oniguruma</span><span class="w"> </span><span class="p">(</span><span class="vg">atom</span><span class="p">)</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">4.1.0</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">atom</span><span class="o">/</span><span class="vg">node</span><span class="o">-</span><span class="vg">oniguruma</span><span class="p">)</span>
+<span class="nl">73</span><span class="o">.</span><span class="w"> </span><span class="vg">Node</span><span class="o">-</span><span class="vg">semver</span><span class="w"> </span><span class="p">(</span><span class="vg">aka</span><span class="w"> </span><span class="vg">semver</span><span class="p">)</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">4.3.4</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">npm</span><span class="o">/</span><span class="vg">node</span><span class="o">-</span><span class="vg">semver</span><span class="p">)</span>
+<span class="nl">74</span><span class="o">.</span><span class="w"> </span><span class="vg">NRefactory</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">10.0.0</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">icsharpcode</span><span class="o">/</span><span class="vg">NRefactory</span><span class="p">)</span>
+<span class="nl">75</span><span class="o">.</span><span class="w"> </span><span class="vg">object</span><span class="o">.</span><span class="vg">omit</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">0.2.1</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">jonschlinkert</span><span class="o">/</span><span class="vg">object</span><span class="o">.</span><span class="vg">omit</span><span class="p">)</span>
+<span class="nl">76</span><span class="o">.</span><span class="w"> </span><span class="vg">Omnisharp</span><span class="o">-</span><span class="vg">roslyn</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">1.1.1</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">OmniSharp</span><span class="o">/</span><span class="vg">omnisharp</span><span class="o">-</span><span class="vg">roslyn</span><span class="p">)</span>
+<span class="nl">77</span><span class="o">.</span><span class="w"> </span><span class="vg">oniguruma</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">5.9.3</span><span class="w"> </span><span class="p">(</span><span class="nl">http:</span><span class="o">//</span><span class="vg">www</span><span class="o">.</span><span class="vg">geocities</span><span class="o">.</span><span class="vg">jp</span><span class="o">/</span><span class="vg">kosako3</span><span class="o">/</span><span class="vg">oniguruma</span><span class="o">/</span><span class="p">)</span>
+<span class="nl">78</span><span class="o">.</span><span class="w"> </span><span class="vg">parse</span><span class="o">-</span><span class="vg">glob</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">3.0.2</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">jonschlinkert</span><span class="o">/</span><span class="vg">parse</span><span class="o">-</span><span class="vg">glob</span><span class="p">)</span>
+<span class="nl">79</span><span class="o">.</span><span class="w"> </span><span class="vg">preserve</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">0.2.0</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">jonschlinkert</span><span class="o">/</span><span class="vg">preserve</span><span class="p">)</span>
+<span class="nl">80</span><span class="o">.</span><span class="w"> </span><span class="vg">randomatic</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">1.1.0</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">jonschlinkert</span><span class="o">/</span><span class="vg">randomatic</span><span class="p">)</span>
+<span class="nl">81</span><span class="o">.</span><span class="w"> </span><span class="vg">react</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">0.12.0</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">facebook</span><span class="o">/</span><span class="vg">react</span><span class="p">)</span>
+<span class="nl">82</span><span class="o">.</span><span class="w"> </span><span class="vg">Readable</span><span class="o">-</span><span class="vg">stream</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">1.0.33</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">iojs</span><span class="o">/</span><span class="vg">readable</span><span class="o">-</span><span class="vg">stream</span><span class="p">)</span>
+<span class="nl">83</span><span class="o">.</span><span class="w"> </span><span class="vg">Readdirp</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">1.3.0</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">thlorenz</span><span class="o">/</span><span class="vg">readdirp</span><span class="p">)</span>
+<span class="nl">84</span><span class="o">.</span><span class="w"> </span><span class="vg">regex</span><span class="o">-</span><span class="vg">cache</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">0.4.2</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">jonschlinkert</span><span class="o">/</span><span class="vg">regex</span><span class="o">-</span><span class="vg">cache</span><span class="p">)</span>
+<span class="nl">85</span><span class="o">.</span><span class="w"> </span><span class="vg">repeat</span><span class="o">-</span><span class="vg">element</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">1.1.2</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">jonschlinkert</span><span class="o">/</span><span class="vg">repeat</span><span class="o">-</span><span class="vg">element</span><span class="p">)</span>
+<span class="nl">86</span><span class="o">.</span><span class="w"> </span><span class="vg">repeat</span><span class="o">-</span><span class="vg">string</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">1.5.2</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">jonschlinkert</span><span class="o">/</span><span class="vg">repeat</span><span class="o">-</span><span class="vg">string</span><span class="p">)</span>
+<span class="nl">87</span><span class="o">.</span><span class="w"> </span><span class="vg">sax</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">1.1.1</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">isaacs</span><span class="o">/</span><span class="vg">sax</span><span class="o">-</span><span class="vg">js</span><span class="p">)</span>
+<span class="nl">88</span><span class="o">.</span><span class="w"> </span><span class="vg">SDB</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">1.4</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">mono</span><span class="o">/</span><span class="vg">sdb</span><span class="p">)</span>
+<span class="nl">89</span><span class="o">.</span><span class="w"> </span><span class="vg">Sigmund</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">1.0.1</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">isaacs</span><span class="o">/</span><span class="vg">sigmund</span><span class="p">)</span>
+<span class="nl">90</span><span class="o">.</span><span class="w"> </span><span class="vg">source</span><span class="o">-</span><span class="vg">map</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">0.4.4</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">mozilla</span><span class="o">/</span><span class="vg">source</span><span class="o">-</span><span class="vg">map</span><span class="p">)</span>
+<span class="nl">91</span><span class="o">.</span><span class="w"> </span><span class="vg">String_decoder</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">0.10.31</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">rvagg</span><span class="o">/</span><span class="vg">string_decoder</span><span class="p">)</span>
+<span class="nl">92</span><span class="o">.</span><span class="w"> </span><span class="vg">stringScore</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">0.1.10</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">joshaven</span><span class="o">/</span><span class="vg">string_score</span><span class="p">)</span>
+<span class="nl">93</span><span class="o">.</span><span class="w"> </span><span class="vg">Typechecker</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">2.0.8</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">bevry</span><span class="o">/</span><span class="vg">typechecker</span><span class="p">)</span>
+<span class="nl">94</span><span class="o">.</span><span class="w"> </span><span class="vg">typescript</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">1.5</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">Microsoft</span><span class="o">/</span><span class="vg">TypeScript</span><span class="o">/</span><span class="p">)</span>
+<span class="nl">95</span><span class="o">.</span><span class="w"> </span><span class="vg">typescript</span><span class="o">-</span><span class="vg">sublime</span><span class="o">-</span><span class="vg">plugin</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">0.1.5</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">Microsoft</span><span class="o">/</span><span class="vg">TypeScript</span><span class="o">-</span><span class="vg">Sublime</span><span class="o">-</span><span class="vg">Plugin</span><span class="p">)</span>
+<span class="nl">96</span><span class="o">.</span><span class="w"> </span><span class="vg">underscore</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">1.8.2</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">jashkenas</span><span class="o">/</span><span class="vg">underscore</span><span class="p">)</span>
+<span class="nl">97</span><span class="o">.</span><span class="w"> </span><span class="vg">vscode</span><span class="o">-</span><span class="vg">swift</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">owensd</span><span class="o">/</span><span class="vg">vscode</span><span class="o">-</span><span class="vg">swift</span><span class="p">)</span>
+<span class="nl">98</span><span class="o">.</span><span class="w"> </span><span class="vg">winreg</span><span class="w"> </span><span class="vg">version</span><span class="w"> </span><span class="mf">0.0.12</span><span class="w"> </span><span class="p">(</span><span class="nl">https:</span><span class="o">//</span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">fresc81</span><span class="o">/</span><span class="vg">node</span><span class="o">-</span><span class="vg">winreg</span><span class="p">)</span>
+</pre></div>
+<p>注意一下里面atom相关的模块</p>
+
+<h3>package.json</h3>
+<div class="highlight"><pre><span class="p">{</span>
+<span class="w">  </span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Code&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;version&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;0.8.0&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;author&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Microsoft Corporation&quot;</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="s2">&quot;main&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;./out/vs/workbench/electron-main/bootstrap&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;private&quot;</span><span class="o">:</span><span class="w"> </span><span class="vg">true</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;engines&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="s2">&quot;node&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&gt;= 0.10.0 &lt; 0.11.0&quot;</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="s2">&quot;dependencies&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="s2">&quot;applicationinsights&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;0.15.5&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;chokidar&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;^1.0.0&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;emmet&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;^1.3.0&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;first-mate&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;git://github.com/alexandrudima/first-mate.git#c75bbe40b66b3560104faf399880c35683d7283d&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;getmac&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;1.0.7&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;graceful-fs&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;4.1.2&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;http-proxy-agent&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;^0.2.6&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;https-proxy-agent&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;^0.3.5&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;iconv-lite&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;^0.4.7&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;sax&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;^1.1.1&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;semver&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;^4.2.0&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;winreg&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;0.0.12&quot;</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="s2">&quot;devDependencies&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="s2">&quot;async&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;^1.4.0&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;atom-shell-installer-assets&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;^0.2.0&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;azure-storage&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;^0.3.1&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;crud-file-server&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;^0.6.0&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;debounce&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;^1.0.0&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;event-stream&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;^3.1.7&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;express&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;^4.13.1&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;glob&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;^5.0.13&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;gulp&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;^3.8.9&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;gulp-atom-electron&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;^0.17.1&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;gulp-azure-storage&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;^0.3.0&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;gulp-bom&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;^1.0.0&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;gulp-filter&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;^3.0.0&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;gulp-json-editor&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;^2.2.1&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;gulp-mocha&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;^2.1.3&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;gulp-rename&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;^1.2.0&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;gulp-symdest&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;^1.0.0&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;gulp-tsb&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;git://github.com/jrieken/gulp-tsb.git#40f34810a95708c1bbc1433ceecb01203bf2819c&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;gulp-vinyl-zip&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;^1.0.3&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;gulp-watch&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;^4.2.4&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;innosetup-compiler&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;^5.5.60&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;istanbul&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;^0.3.17&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;jsdom-no-contextify&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;^3.1.0&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;mime&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;1.2.11&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;minimatch&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;^2.0.10&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;mkdirp&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;^0.5.0&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;mocha&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;^2.2.5&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;optimist&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;0.3.5&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;queue&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;3.0.6&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;requirejs&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;2.1.9&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;rimraf&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;^2.2.8&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;uglify-js&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;2.4.8&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;underscore&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;^1.8.2&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;vinyl&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;^0.4.5&quot;</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="s2">&quot;update&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="s2">&quot;baseUrl&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;https://ticino-builds.azurewebsites.net&quot;</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="s2">&quot;commit&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;7917414ff6ec7255dc60b2f7881e5178966e864e&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;date&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;2015-09-07T10:53:44.750Z&quot;</span>
+<span class="p">}</span>
+</pre></div>
+<h2>插件系统</h2>
+
+<p>https://marketplace.visualstudio.com/#VSCode</p>
+
+<p>todo</p>
+
+<h2>扩展</h2>
+
+<ul>
+<li><a href="javascript:if(confirm(%27https://github.com/Microsoft/vscode-react-native  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27https://github.com/Microsoft/vscode-react-native%27" tppabs="https://github.com/Microsoft/vscode-react-native">vscode-react-native</a></li>
+<li><a href="javascript:if(confirm(%27https://github.com/Microsoft/vscode-go  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27https://github.com/Microsoft/vscode-go%27" tppabs="https://github.com/Microsoft/vscode-go">vscode-go</a></li>
+</ul>
+
+<h2>调试协议</h2>
+
+<p>VS Code 把 NodeJS 和 Mono 的调试功能抽象出来了，大家就可以通过自定义 Debugger Adapter 和 VSCode Debug Protocol 从而实现自己的调试器。现在 VS Code 插件中心 里，Go、PHP、Python、Ruby 的 Debugger 做的都比较成熟了</p>
+
+<p>参见</p>
+
+<p>https://code.visualstudio.com/Docs/extensions/example-debuggers</p>
+
+<p>如果你也想自己实现一个Debugger，可以参考</p>
+
+<h2>FAQ</h2>
+
+<p>官方<a href="javascript:if(confirm(%27https://code.visualstudio.com/docs/supporting/faq  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27https://code.visualstudio.com/docs/supporting/faq%27" tppabs="https://code.visualstudio.com/docs/supporting/faq">FAQ</a></p>
+
+<h3>如何添加git地址？</h3>
+
+<p>vsc其实不管你的git初始化的，只要你当前是git管理的，它的git部分才有用。</p>
+
+<p>也就是说git需要自己处理。</p>
+
+<p>比如</p>
+<div class="highlight"><pre><span class="vg">express</span><span class="w"> </span><span class="vg">helloworld</span>
+<span class="vg">cd</span><span class="w"> </span><span class="vg">helloworld</span>
+<span class="vg">git</span><span class="w"> </span><span class="vg">init</span>
+<span class="vg">git</span><span class="w"> </span><span class="vg">remote</span><span class="w"> </span><span class="vg">add</span><span class="w"> </span><span class="vg">origin</span><span class="w"> </span><span class="vg">git@github</span><span class="o">.</span><span class="nl">com:</span><span class="vg">ashtuchkin</span><span class="o">/</span><span class="vg">iconv</span><span class="o">-</span><span class="vg">lite</span><span class="o">.</span><span class="vg">git</span>
+<span class="vg">git</span><span class="w"> </span><span class="vg">add</span><span class="w"> </span><span class="o">.</span>
+<span class="vg">git</span><span class="w"> </span><span class="vg">commit</span><span class="w"> </span><span class="o">-</span><span class="vg">am</span><span class="w"> </span><span class="c1">&#39;init&#39;</span>
+</pre></div>
+<p>如果要切换分支，可以用checkout命令</p>
+<div class="highlight"><pre><span class="vg">git</span><span class="w"> </span><span class="vg">checkout</span><span class="w"> </span><span class="o">-</span><span class="vg">b</span><span class="w"> </span><span class="vg">dev</span>
+</pre></div>
+<p>如果是已有分支就</p>
+<div class="highlight"><pre><span class="vg">git</span><span class="w"> </span><span class="vg">checkout</span><span class="w"> </span><span class="vg">dev</span>
+</pre></div>
+<h3>怎么让语法检查器支持es6的语法呢？</h3>
+
+<p>要支持es6的话，需要在项目下建一个jsconfig.json，内容为</p>
+<div class="highlight"><pre><span class="p">{</span>
+<span class="w">    </span><span class="s2">&quot;compilerOptions&quot;</span><span class="o">:</span><span class="p">{</span>
+<span class="w">        </span><span class="s2">&quot;target&quot;</span><span class="o">:</span><span class="s2">&quot;ES6&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;module&quot;</span><span class="o">:</span><span class="s2">&quot;commonjs&quot;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+<p>嫌麻烦的话可以安装下@hellopao 写的模块<a href="javascript:if(confirm(%27https://www.npmjs.com/package/jsf  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27https://www.npmjs.com/package/jsf%27" tppabs="https://www.npmjs.com/package/jsf">jsf</a>，通过命令行来生成该文件</p>
+<div class="highlight"><pre><span class="vg">npm</span><span class="w"> </span><span class="vg">install</span><span class="w"> </span><span class="vg">jsf</span><span class="w"> </span><span class="o">-</span><span class="vg">g</span>
+<span class="vg">jsf</span>
+</pre></div>
+<h3>可以折叠代码了么？</h3>
+
+<p>0.10.11之后都可以的</p>
+
+<h3>图片没有路径选择提示么？</h3>
+
+<p>目前还没有，需要等</p>
+
+<h3>vsc怎么支持jsx?</h3>
+
+<p>后缀名为“jsx&quot;,或者你把语言设为&quot;javascript react&quot;</p>
+
+<h2>结语</h2>
+
+<p>vsc和其他编辑器（sublime text,atom,webstorm等）相比，某些方面还存在很多问题。对于一个前端工程师来说，它已经足够好了。</p>
+
+<p>推荐使用~</p>
+
+<h2>TODO</h2>
+
+<ul>
+<li>0.8.1</li>
+<li>VS Code v0.9.1 (October 2015) https://code.visualstudio.com/updates#VSCode</li>
+</ul>
+
+<p>0.9.1主要的改进有：</p>
+
+<ul>
+<li><p>支持本地的持久自定义位置</p>
+
+<ul>
+<li>Windows %USERPROFILE%.vscode\extensions</li>
+<li>Mac $HOME/.vscode/extensions</li>
+<li>Linux $HOME/.vscode/extensions</li>
+</ul></li>
+<li><p>支持自定义语言和自定义主题</p></li>
+<li><p>改进了 Debug</p></li>
+<li><p>C# 改进了OmniSharp 的支持</p></li>
+<li><p>TypeScript 支持 1.6</p></li>
+<li><p>Markdown 更好的预览</p></li>
+<li><p>Unity 支持Unity shader 文件高亮</p></li>
+<li><p>一些其他的改进和 Bug 修复。</p></li>
+</ul>
+<div class="highlight"><pre><span class="vg">npm</span><span class="w"> </span><span class="vg">install</span><span class="w"> </span><span class="o">-</span><span class="vg">g</span><span class="w"> </span><span class="vg">yo</span>
+<span class="vg">npm</span><span class="w"> </span><span class="vg">install</span><span class="w"> </span><span class="o">-</span><span class="vg">g</span><span class="w"> </span><span class="vg">generator</span><span class="o">-</span><span class="vg">code</span>
+<span class="vg">yo</span><span class="w"> </span><span class="vg">code</span>
+</pre></div>
+<ul>
+<li>支持更多语言着色</li>
+<li>主题</li>
+</ul>
+
+<h3>markdown preview</h3>
+
+<p>0.9+开始增加了markdown预览功能，试用了一下，还是非常不错得</p>
+
+<p><img src="img/0_9_0_openpreviewside.png" tppabs="http://i5ting.github.io/vsc/img/0_9_0_openpreviewside.png" alt=""></p>
+
+<p>上面的命令，可以翻译一下</p>
+
+<ul>
+<li>1）新建split窗口</li>
+<li>2）讲当前markdown切换到预览模式</li>
+</ul>
+
+<p>即</p>
+<div class="highlight"><pre><span class="vg">command</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="o">\</span>
+<span class="vg">shift</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="vg">command</span><span class="w"> </span><span class="o">+</span><span class="vg">v</span>
+</pre></div>
+<h2>vsc在线付费培训</h2>
+
+<p>技巧网上多的是，习惯哪里有？欢迎学习</p>
+
+<p>时间1周</p>
+
+<ul>
+<li>快速了解特性</li>
+<li>培养高效习惯</li>
+</ul>
+
+<p>详见 http://i5ting.github.io/vsc-course/ </p>
+
+			          	</article>
+			        </div>
+					</div>
+	      </body>
+	    </html>
+			<script type="text/javascript" src="toc/js/jquery-1.4.4.min.js" tppabs="http://i5ting.github.io/vsc/toc/js/jquery-1.4.4.min.js"></script>
+			<script type="text/javascript" src="toc/js/jquery.ztree.all-3.5.min.js" tppabs="http://i5ting.github.io/vsc/toc/js/jquery.ztree.all-3.5.min.js"></script>
+			<script type="text/javascript" src="toc/js/ztree_toc.js" tppabs="http://i5ting.github.io/vsc/toc/js/ztree_toc.js"></script>
+      <script type="text/javascript" src="toc/toc_conf.js" tppabs="http://i5ting.github.io/vsc/toc/toc_conf.js"></script>
+      
+			<SCRIPT type="text/javascript" >
+			<!--
+			$(document).ready(function(){
+          var css_conf = eval(markdown_panel_style);
+          $('#readme').css(css_conf)
+          
+          var conf = eval(jquery_ztree_toc_opts);
+  				$('#tree').ztree_toc(conf);
+
+				
+			});
+			//-->
+			</SCRIPT>
+	  
